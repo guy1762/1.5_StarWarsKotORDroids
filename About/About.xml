@@ -31,6 +31,7 @@
             <packageId>guy762.KotORWeapons</packageId>
             <displayName>Star Wars KotOR Weapons and Armor</displayName>
             <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2938932438</steamWorkshopUrl>
+			<downloadUrl>https://github.com/guy1762/1.5ZIP_StarWarsKotORWeaponsArmor</downloadUrl>
         </li>
 	</modDependencies>
 	
