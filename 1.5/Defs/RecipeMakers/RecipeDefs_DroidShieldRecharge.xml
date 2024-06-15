@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  
+  <RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_basicI</defName>
+		<label>recharge Mark I droid defense shield</label>
+		<description>Recharge a used Mark I droid defense shield. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging Mark I droid defense shield.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_basicI</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_basicI>1</guy762_DroidShield_basicI>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_basicII</defName>
+		<label>recharge Mark II droid defense shield</label>
+		<description>Recharge a used Mark II droid defense shield. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging Mark II droid defense shield.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_basicII</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_basicII>1</guy762_DroidShield_basicII>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_basicIII</defName>
+		<label>recharge Mark III droid defense shield</label>
+		<description>Recharge a used Mark III droid defense shield. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging Mark III droid defense shield.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_basicIII</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_basicIII>1</guy762_DroidShield_basicIII>
+		</products>
+	</RecipeDef>
+	
+	
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_envI</defName>
+		<label>recharge Mark I droid environment shield</label>
+		<description>Recharge a used Mark I droid environment shield. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging Mark I droid environment shield.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_envI</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_envI>1</guy762_DroidShield_envI>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_envII</defName>
+		<label>recharge Mark II droid environment shield</label>
+		<description>Recharge a used Mark II droid environment shield. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging Mark II droid environment shield.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_envII</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_envII>1</guy762_DroidShield_envII>
+		</products>
+	</RecipeDef>
+	
+	
+	
+	
+	
+	
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_defI</defName>
+		<label>recharge droid deflector grid</label>
+		<description>Recharge a used droid deflector grid. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging droid deflector grid.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_defI</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_defI>1</guy762_DroidShield_defI>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_defII</defName>
+		<label>recharge adv. droid deflector grid</label>
+		<description>Recharge a used adv. droid deflector grid. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging adv. droid deflector grid.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_defII</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_defII>1</guy762_DroidShield_defII>
+		</products>
+	</RecipeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_melee</defName>
+		<label>recharge droid melee shield</label>
+		<description>Recharge a used droid melee shield. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging droid melee shield.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_melee</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_melee>1</guy762_DroidShield_melee>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_ion</defName>
+		<label>recharge droid ion barrier</label>
+		<description>Recharge a used droid ion barrier. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging droid ion barrier.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_ion</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_ion>1</guy762_DroidShield_ion>
+		</products>
+	</RecipeDef>
+	
+	
+	
+	
+	
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_arkanian</defName>
+		<label>recharge Arkanian droid defense shield</label>
+		<description>Recharge a used Arkanian droid defense shield. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging Arkanian droid defense shield.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_arkanian</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_arkanian>1</guy762_DroidShield_arkanian>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_echani</defName>
+		<label>recharge Echani droid shield</label>
+		<description>Recharge a used Echani droid shield. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging Echani droid shield.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_echani</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_echani>1</guy762_DroidShield_echani>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="KotORRecipe_ShieldRecharge_base">
+		<defName>KotORRecipe_DroidShieldRecharge_verpine</defName>
+		<label>recharge Verpine prototype droid shield</label>
+		<description>Recharge a used Verpine prototype droid shield. Must have at least one charge remaining.\n\nNOTE: Do NOT set this to "do forever" as your pawns will be stuck in a loop of recharging the same shield forever!</description>
+		<jobString>recharging Verpine prototype droid shield.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>guy762_DroidShield_verpine</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<guy762_DroidShield_verpine>1</guy762_DroidShield_verpine>
+		</products>
+	</RecipeDef>
+	
+	
+</Defs>

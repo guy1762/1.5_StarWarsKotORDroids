@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HeadTypeDef>
+        <defName>guy762_DroidHeadType_GE3PD</defName>
+        <graphicPath>Droid/GE3/GE3_head</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_GE3PD</defName>
+		<title>GE3-series protocol droid</title>
+		<titleShort>GE3 protocol droid</titleShort>
+		<description>This is a common protocol droid.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_GE3PD</li>
+			<li>guy762BSC_Droid_all</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+			<li>Animals</li>
+			<li>Violent</li>
+			<li>Constructing</li>
+			<li>Mining</li>
+			<li>Crafting</li>
+			<li>PlantWork</li>
+			<li>Hauling</li>
+			<li>Cleaning</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Caring</li>
+			<li>Social</li>
+			<li>Cooking</li>
+			<li>Firefighting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	
+	
+	
+	
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_GE3LD</defName>
+		<title>GE3-series labor droid</title>
+		<titleShort>GE3 labor droid</titleShort>
+		<description>This is a common labor droid.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_GE3LD</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+			<li>Hunting</li>
+			<li>Violent</li>
+			<li>Constructing</li>
+			<li>Mining</li>
+			<li>Crafting</li>
+			<li>Caring</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Cleaning</li>
+			<li>Social</li>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Animals</li>
+			<li>Hauling</li>
+			<li>Firefighting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	
+	
+	
+	
+	
+	<AlienRace.ThingDef_AlienRace Name="guy762_DroidRace_GE3PD" ParentName="guy762_KotORDroidBase">
+		<defName>guy762_DroidRace_GE3PD</defName>
+		<label>GE3-series protocol droid</label>
+		<description>The GE3-series protocol droid is one of Czerka Corporation's leading products, and can be found throughout the galaxy in a variety of different public service roles. Its simplistic design allows for many different programming options, and can serve as an interpreter, medical, or even a computer networking droid.\n\nThis droid is capable of the following work types:\n\n-Social\n-Medical\n-Cooking\n-Firefighting</description>
+		<alienRace>
+			<graphicPaths>
+                <body>
+                    <path>Droid/GE3/GE3_body</path>
+                </body>
+				<bodyMasks>
+				  <path>Droid/GE3/GE3_bodymask</path>
+				</bodyMasks>
+                <head>
+                    <path>Droid/GE3/GE3_head</path>
+					<genderGraphics>
+                        <Male>Droid/GE3/GE3_head</Male>
+                        <Female>Droid/GE3/GE3_head</Female>
+                        <None>Droid/GE3/GE3_head</None>
+                    </genderGraphics>
+                </head>
+				<headMasks>
+				  <path>Droid/GE3/GE3_headmask</path>
+				  <genderGraphics>
+                        <Male>Droid/GE3/GE3_headmask</Male>
+                        <Female>Droid/GE3/GE3_headmask</Female>
+                        <None>Droid/GE3/GE3_headmask</None>
+                    </genderGraphics>
+				</headMasks>
+                <skinShader>Cutout</skinShader>
+				<apparel>
+                    <bodyTypeFallback>Thin</bodyTypeFallback>
+                </apparel>
+            </graphicPaths>
+			<raceRestriction>
+				<apparelList>
+				  <li>guy762_DroidArmorLte</li>
+				  <li>guy762_DroidArmorLte_czerka</li>
+				  <li>guy762_DroidArmorLte_env</li>
+				  <li>guy762_DroidArmorLte_desh</li>
+				  <li>guy762_DroidArmorLte_impact</li>
+				  <li>guy762_DroidArmorLte_composite</li>
+				  <li>guy762_DroidArmorLte_agrinium</li>
+				  
+				  <li>guy762_DroidSoftware_computer</li>
+				  <li>guy762_DroidSoftware_security</li>
+				  <li>guy762_DroidSoftware_lockout</li>
+				  <li>guy762_DroidSoftware_exchange</li>
+				  <li>guy762_DroidSoftware_repair</li>
+				  <li>guy762_DroidSoftware_demo</li>
+				  <li>guy762_DroidSoftware_anatomy</li>
+				  
+				</apparelList>
+				
+				<whiteTraitList>
+					<li>Kind</li>
+				</whiteTraitList>
+			</raceRestriction>
+            <generalSettings>
+                <alienPartGenerator>
+					<colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li> <!--default-->
+										<weight>100</weight>
+										<only>RGBA(170,170,180,255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li> <!--default-->
+										<weight>100</weight>
+										<only>RGBA(130,140,150,255)</only>
+									</li>
+									<li> <!--blue-->
+										<weight>10</weight>
+										<only>RGBA(125,175,200,255)</only>
+									</li>
+									<li> <!--green-->
+										<weight>10</weight>
+										<only>RGBA(115,130,105,255)</only>
+									</li>
+									<li> <!--red-->
+										<weight>10</weight>
+										<only>RGBA(190,85,70,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+					<headBodyPartDef>ABF_BodyPart_Synstruct_Head</headBodyPartDef>
+					<headTypes>
+                        <li>guy762_DroidHeadType_GE3PD</li>
+                    </headTypes>
+					<bodyTypes Inherit="False">
+                        <li>Female</li>
+                    </bodyTypes>
+					<!--customDrawSize>(1.1)</customDrawSize-->
+                </alienPartGenerator>
+				<forcedRaceTraitEntries>
+				  <li>
+					<defName>Asexual</defName>
+				  </li>
+				  <li>
+					<defName>Kind</defName>
+				  </li>
+				</forcedRaceTraitEntries>
+            </generalSettings>
+		</alienRace>
+        <uiIconPath>UI/Icon_GE3PD</uiIconPath>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<MoveSpeed>1</MoveSpeed>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>25</ComfyTemperatureMax>
+			
+			<GlobalLearningFactor>1</GlobalLearningFactor>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<InjuryHealingFactor>0.25</InjuryHealingFactor>
+            <!--IncomingDamageFactor>1</IncomingDamageFactor-->
+			
+            <EMPResistance MayRequire="Ludeon.RimWorld.Biotech">0</EMPResistance>
+			
+            <ABF_Stat_Synstruct_CoherenceRetention>1.25</ABF_Stat_Synstruct_CoherenceRetention>
+			
+            <ABF_Stat_Synstruct_NutritionalIntakeEfficiency>0.75</ABF_Stat_Synstruct_NutritionalIntakeEfficiency>
+            <ABF_Stat_Synstruct_ChargingSpeed>0.75</ABF_Stat_Synstruct_ChargingSpeed>
+			
+			<ABF_Stat_Artificial_ComplexityLimit>20</ABF_Stat_Artificial_ComplexityLimit>
+            <ABF_Stat_Artificial_SkillLimit>16</ABF_Stat_Artificial_SkillLimit>
+			
+			<Mass>65</Mass>
+		</statBases>
+		<race>
+			<body>ATR_KotORDroidBody_NoTechBiped</body>
+			<hasGenders>false</hasGenders>
+			<lifeExpectancy>250</lifeExpectancy>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<baseBodySize>1</baseBodySize>
+			<nameGenerator>guy762_DroidNamer_GE3PD</nameGenerator>
+            <nameGeneratorFemale>guy762_DroidNamer_GE3PD</nameGeneratorFemale>
+		</race>
+		<modExtensions>
+			<li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
+                <canBeSapient>false</canBeSapient>
+				<!--droneSkillLevel>14</droneSkillLevel--><droneSkillLevel>0</droneSkillLevel>
+				<maxDirectives>2</maxDirectives>
+				<inherentSkills>
+                    <li><key>Social</key><value>14</value></li>
+                    <li><key>Medicine</key><value>8</value></li>
+                </inherentSkills>
+				
+                <dronesCanHaveTraits>true</dronesCanHaveTraits>
+				
+				<!--
+				<useCustomNoneGenderNameMakers>true</useCustomNoneGenderNameMakers>
+                <sapientNoneGenderNameMaker>guy762_DroidNamer_GE3PD</sapientNoneGenderNameMaker>
+                <droneNoneGenderNameMaker>guy762_DroidNamer_GE3PD</droneNoneGenderNameMaker>
+				-->
+				
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+					<li MayRequire="rim.job.world">Sex</li>
+					<li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedNeeds>
+                <artificialNeeds>
+                    <li><key>ABF_Need_Synstruct_Coolant</key><value>0.25</value></li>
+                    <li><key>ABF_Need_Synstruct_Lubricant</key><value>0.5</value></li>
+                </artificialNeeds>
+				<medicineList>
+                    <li>ABF_Thing_Synstruct_RepairStimMinor</li>
+                    <li>ABF_Thing_Synstruct_RepairStim</li>
+                    <li>ABF_Thing_Synstruct_RepairStimUltra</li>
+                </medicineList>
+                <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+				
+				<inherentWorkTypes>
+					<li>Warden</li>
+					<li MayRequire="Orion.Hospitality">Diplomat</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+					<li>Firefighter</li>
+					<li>BasicWorker</li>
+				</inherentWorkTypes>
+				<forbiddenWorkTypes>
+					<li>Art</li>
+					<li>Mining</li>
+					<li>Growing</li>
+					<li>PlantCutting</li>
+					<li>Handling</li>
+					<li>Smithing</li>
+					<li>Crafting</li>
+					<li>Tailoring</li>
+					<li>Construction</li>
+					<li>Hunting</li>
+				</forbiddenWorkTypes>
+            </li>
+			<li Class="ArtificialBeings.ABF_SynstructExtension">
+                <playerReprogrammableDronePawnKindDef>KotORDroidColonist_GE3PD</playerReprogrammableDronePawnKindDef>
+            </li>
+		</modExtensions>
+		<tools>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<recipes>
+            <li>ABF_Recipe_Synstruct_InjectCoolant</li>
+            <li>ABF_Recipe_Synstruct_InjectLubricant</li>
+        </recipes>
+		<butcherProducts>
+            <Steel>25</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</butcherProducts>
+		<tradeTags>
+            <li>guy762TT_KotORDroids_protocol</li>
+		</tradeTags>
+	</AlienRace.ThingDef_AlienRace>
+	
+	
+	
+	
+	
+	
+	
+	<AlienRace.ThingDef_AlienRace ParentName="guy762_DroidRace_GE3PD">
+		<defName>guy762_DroidRace_GE3LD</defName>
+		<label>GE3-series labor droid</label>
+		<description>This version of the popular GE3-series droid is designed for common labor, as opposed to human-cyborg relations. Marketed primarily to agri-world plantation owners, its enhanced servomotors allow for a greater range of full-body movement than the ordinarily stiff GE3 protocol droids are capable of, necessary for performing more physically demanding tasks like crop seeding and harvesting.\n\nThis droid is capable of the following work types:\n\n-Cleaning\n-Hauling\n-Firefighting\n-Plants\n-Animals\n-Cooking\n-Social</description>
+		<alienRace>
+			<generalSettings>
+                <alienPartGenerator>
+					<colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li> <!--teal-->
+										<weight>100</weight>
+										<only>RGBA(80,115,125,255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li> <!--copper-->
+										<weight>100</weight>
+										<only>RGBA(205,155,130,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+                </alienPartGenerator>
+            </generalSettings>
+		</alienRace>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<MoveSpeed>2</MoveSpeed>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+			
+			<ABF_Stat_Synstruct_CoherenceRetention>0.75</ABF_Stat_Synstruct_CoherenceRetention>
+			
+			<ABF_Stat_Artificial_ComplexityLimit>25</ABF_Stat_Artificial_ComplexityLimit>
+            <ABF_Stat_Artificial_SkillLimit>14</ABF_Stat_Artificial_SkillLimit>
+		</statBases>
+		<modExtensions Inherit="False">
+			<li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
+                <canBeSapient>false</canBeSapient>
+				<!--droneSkillLevel>8</droneSkillLevel--><droneSkillLevel>0</droneSkillLevel>
+				<maxDirectives>3</maxDirectives>
+				<inherentSkills>
+                    <li><key>Plants</key><value>8</value></li>
+                </inherentSkills>
+				
+                <dronesCanHaveTraits>false</dronesCanHaveTraits>
+				
+				<!--
+				<useCustomNoneGenderNameMakers>true</useCustomNoneGenderNameMakers>
+                <sapientNoneGenderNameMaker>guy762_DroidNamer_GE3PD</sapientNoneGenderNameMaker>
+                <droneNoneGenderNameMaker>guy762_DroidNamer_GE3PD</droneNoneGenderNameMaker>
+				-->
+				
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+					<li MayRequire="rim.job.world">Sex</li>
+					<li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedNeeds>
+                <artificialNeeds>
+                    <li><key>ABF_Need_Synstruct_Coolant</key><value>0.25</value></li>
+                    <li><key>ABF_Need_Synstruct_Lubricant</key><value>1</value></li>
+                </artificialNeeds>
+				<medicineList>
+                    <li>ABF_Thing_Synstruct_RepairStimMinor</li>
+                    <li>ABF_Thing_Synstruct_RepairStim</li>
+                    <li>ABF_Thing_Synstruct_RepairStimUltra</li>
+                </medicineList>
+                <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+				
+				<inherentWorkTypes>
+					<li>Growing</li>
+					<li>PlantCutting</li>
+					<li>Hauling</li>
+					<li>Firefighter</li>
+					<li>BasicWorker</li>
+					<li>Cleaning</li>
+				</inherentWorkTypes>
+				<forbiddenWorkTypes>
+					<li>Art</li>
+					<li>Mining</li>
+					<li>Doctor</li>
+					<li>ABF_WorkType_Artificial_Artificer</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+					<li>Smithing</li>
+					<li>Crafting</li>
+					<li>Tailoring</li>
+					<li>Research</li>
+					<li>Hunting</li>
+				</forbiddenWorkTypes>
+            </li>
+			<li Class="ArtificialBeings.ABF_SynstructExtension">
+                <playerReprogrammableDronePawnKindDef>KotORDroidColonist_GE3LD</playerReprogrammableDronePawnKindDef>
+            </li>
+		</modExtensions>
+        <uiIconPath>UI/Icon_GE3LD</uiIconPath>
+		<tradeTags>
+            <li>guy762TT_KotORDroids_protocol</li>
+		</tradeTags>
+		<butcherProducts>
+            <Steel>25</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</butcherProducts>
+	</AlienRace.ThingDef_AlienRace>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+</Defs>

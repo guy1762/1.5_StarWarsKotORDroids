@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+   
+   
+   <HediffDef>
+    <defName>guy762_HvyEShield_basic</defName>
+    <label>heavy energy shield</label>
+    <description>An energy shield that blocks all incoming energy and electrical damage.</description>
+    <defaultLabelColor>(0, 1.0, 1.0)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="AthenaFramework.HediffCompProperties_Shield">
+        <maxEnergy>70</maxEnergy>
+        <energyRechargeRate>0.001</energyRechargeRate>
+		<energyPerDamageModifier>0.35</energyPerDamageModifier>
+		<resetDelay>3200</resetDelay>
+		<energyOnStart>1</energyOnStart>
+		<removeOnBreak>true</removeOnBreak>
+
+		<blocksRangedDamage>true</blocksRangedDamage>
+		<blocksExplosions>true</blocksExplosions>
+		<blocksMeleeDamage>false</blocksMeleeDamage>
+		
+        <whitelistedDamageDefs>
+          <li>guy762_RangedDamage_energy</li>
+		  <li>guy762_BeamDamage_energy</li>
+		  <li>guy762_MeleeDamage_energy</li>
+		  <li>guy762_MeleeDamage_ecut</li>
+		  <li>guy762_MeleeDamage_estab</li>
+		  <li>guy762_ExplosiveDamage_energy</li>
+		  <li>guy762_GrenadeDamage_energy</li>
+		  <li>guy762_GrenadeDamage_thermaldet</li>
+		  <li>Beam</li>
+		  <li>guy762_RangedDamage_electrical</li>
+		  <li>guy762_MeleeDamage_electrical</li>
+		  <li>guy762_BeamDamage_electrical</li>
+        </whitelistedDamageDefs>
+		<blacklistedDamageDefs>
+          <li>guy762_RangedDamage_disruptor</li>
+		  <li>guy762_BeamDamage_disruptor</li>
+		  <li>guy762_MeleeDamage_unstoppable</li>
+        </blacklistedDamageDefs>
+		
+		<shatterOn>
+		  <li>EMP</li>
+		  <li>guy762_RangedDamage_ion</li>
+		  <li>guy762_ExplosiveDamage_ion</li>
+		  <li>guy762_MeleeDamage_ion</li>
+		  <li>guy762_GrenadeDamage_ion</li>
+		</shatterOn>
+
+        <absorbFleck>ExplosionFlash</absorbFleck>
+        <breakFleck>ExplosionFlash</breakFleck>
+        <shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+        <absorbSound>kotorsound_shieldhit</absorbSound>
+        <resetSound>kotorsound_shieldpowerup</resetSound>
+
+        <displayGizmo>true</displayGizmo>
+        <gizmoTitle>energy shield</gizmoTitle>
+        <gizmoTip>A shield hediff that blocks all energy damage.</gizmoTip>
+
+        <minDrawSize>2.5</minDrawSize>
+        <maxDrawSize>3.75</maxDrawSize>
+        <scaleWithOwner>true</scaleWithOwner>
+        <graphicData>
+          <texPath>Other/ShieldBubble</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>Transparent</shaderType>
+          <color>(0, 1.0, 1.0)</color>
+        </graphicData>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>12000</disappearsAfterTicks>
+		<showRemainingTime>true</showRemainingTime>
+	  </li>
+	  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+	  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+  
+
+	
+	
+	
+	
+	<HediffDef>
+		<defName>guy762_HvyEShield_thermal</defName>
+		<label>heavy thermal shield</label>
+		<description>An energy shield that blocks all incoming heat damage.</description>
+		<defaultLabelColor>(1.0, 0.5, 0)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+		  <li Class="AthenaFramework.HediffCompProperties_Shield">
+			<maxEnergy>80</maxEnergy>
+			<energyRechargeRate>0.001</energyRechargeRate>
+			<energyPerDamageModifier>0.35</energyPerDamageModifier>
+			<resetDelay>3200</resetDelay>
+			<energyOnStart>1</energyOnStart>
+			<removeOnBreak>true</removeOnBreak>
+
+			<blocksRangedDamage>true</blocksRangedDamage>
+			<blocksExplosions>true</blocksExplosions>
+			<blocksMeleeDamage>false</blocksMeleeDamage>
+			
+			<whitelistedDamageDefs>
+			  <li>Flame</li>
+			  <li>Burn</li>
+			  <li>guy762_GrenadeDamage_plasma</li>
+			  <li>guy762_GrenadeDamage_thermaldet</li>
+			  <li>guy762_BeamDamage_radiation</li>
+			</whitelistedDamageDefs>
+			<blacklistedDamageDefs>
+			  <li>guy762_RangedDamage_disruptor</li>
+			  <li>guy762_BeamDamage_disruptor</li>
+			  <li>guy762_MeleeDamage_unstoppable</li>
+			</blacklistedDamageDefs>
+			
+			<shatterOn>
+			  <li>EMP</li>
+			  <li>guy762_RangedDamage_ion</li>
+			  <li>guy762_ExplosiveDamage_ion</li>
+			  <li>guy762_MeleeDamage_ion</li>
+			  <li>guy762_GrenadeDamage_ion</li>
+			</shatterOn>
+
+			<absorbFleck>ExplosionFlash</absorbFleck>
+			<breakFleck>ExplosionFlash</breakFleck>
+			<shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+			<absorbSound>kotorsound_shieldhit</absorbSound>
+			<resetSound>kotorsound_shieldpowerup</resetSound>
+
+			<displayGizmo>true</displayGizmo>
+			<gizmoTitle>thermal shield</gizmoTitle>
+			<gizmoTip>A shield hediff that blocks all thermal damage.</gizmoTip>
+
+			<minDrawSize>2.5</minDrawSize>
+			<maxDrawSize>3.75</maxDrawSize>
+			<scaleWithOwner>true</scaleWithOwner>
+			<graphicData>
+			  <texPath>Other/ShieldBubble</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <shaderType>Transparent</shaderType>
+			  <color>(1.0, 0.5, 0)</color>
+			</graphicData>
+		  </li>
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>12000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	  </HediffDef>
+  
+
+  
+  
+  
+
+  <HediffDef>
+    <defName>guy762_HvyEShield_env</defName>
+    <label>heavy environmental shield</label>
+    <description>An energy shield that blocks all incoming energy, electrical, sonic, heat, and cold damage.</description>
+    <defaultLabelColor>(1.0, 0, 0)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="AthenaFramework.HediffCompProperties_Shield">
+        <maxEnergy>60</maxEnergy>
+        <energyRechargeRate>0.001</energyRechargeRate>
+		<energyPerDamageModifier>0.35</energyPerDamageModifier>
+		<resetDelay>3200</resetDelay>
+		<energyOnStart>1</energyOnStart>
+		<removeOnBreak>true</removeOnBreak>
+
+		<blocksRangedDamage>true</blocksRangedDamage>
+		<blocksExplosions>true</blocksExplosions>
+		<blocksMeleeDamage>false</blocksMeleeDamage>
+		
+        <whitelistedDamageDefs>
+          <li>guy762_RangedDamage_energy</li>
+		  <li>guy762_BeamDamage_energy</li>
+		  <li>guy762_MeleeDamage_energy</li>
+		  <li>guy762_MeleeDamage_ecut</li>
+		  <li>guy762_MeleeDamage_estab</li>
+		  <li>guy762_ExplosiveDamage_energy</li>
+		  <li>guy762_GrenadeDamage_energy</li>
+		  <li>guy762_GrenadeDamage_thermaldet</li>
+		  <li>Beam</li>
+		  <li>guy762_RangedDamage_electrical</li>
+		  <li>guy762_MeleeDamage_electrical</li>
+		  <li>guy762_BeamDamage_electrical</li>
+		  <li>guy762_RangedDamage_sonic</li>
+		  <li>guy762_MeleeDamage_sonic</li>
+		  <li>guy762_GrenadeDamage_sonic</li>
+		  <li>Thump</li>
+		  <li>Flame</li>
+		  <li>Burn</li>
+		  <li>guy762_GrenadeDamage_plasma</li>
+		  <li>guy762_BeamDamage_radiation</li>
+		  <li>Frostbite</li>
+        </whitelistedDamageDefs>
+		<blacklistedDamageDefs>
+          <li>guy762_RangedDamage_disruptor</li>
+		  <li>guy762_BeamDamage_disruptor</li>
+		  <li>guy762_MeleeDamage_unstoppable</li>
+        </blacklistedDamageDefs>
+		
+		<shatterOn>
+		  <li>EMP</li>
+		  <li>guy762_RangedDamage_ion</li>
+		  <li>guy762_ExplosiveDamage_ion</li>
+		  <li>guy762_MeleeDamage_ion</li>
+		  <li>guy762_GrenadeDamage_ion</li>
+		</shatterOn>
+
+        <absorbFleck>ExplosionFlash</absorbFleck>
+        <breakFleck>ExplosionFlash</breakFleck>
+        <shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+        <absorbSound>kotorsound_shieldhit</absorbSound>
+        <resetSound>kotorsound_shieldpowerup</resetSound>
+
+        <displayGizmo>true</displayGizmo>
+        <gizmoTitle>environmental shield</gizmoTitle>
+        <gizmoTip>A shield hediff that blocks all energy, sonic, heat, and cold damage.</gizmoTip>
+
+        <minDrawSize>2.5</minDrawSize>
+        <maxDrawSize>3.75</maxDrawSize>
+        <scaleWithOwner>true</scaleWithOwner>
+        <graphicData>
+          <texPath>Other/ShieldBubble</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>Transparent</shaderType>
+          <color>(1.0, 0, 0)</color>
+        </graphicData>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>12000</disappearsAfterTicks>
+		<showRemainingTime>true</showRemainingTime>
+	  </li>
+	  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+	  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+  
+
+  
+  
+  
+  
+  <HediffDef>
+    <defName>guy762_HvyEShield_debris</defName>
+    <label>debris shield</label>
+    <description>An energy shield that blocks all incoming melee and kinetic damage.</description>
+    <defaultLabelColor>(0, 0.5, 1.0)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="AthenaFramework.HediffCompProperties_Shield">
+        <maxEnergy>80</maxEnergy>
+        <energyRechargeRate>0.001</energyRechargeRate>
+		<energyPerDamageModifier>0.35</energyPerDamageModifier>
+		<resetDelay>3200</resetDelay>
+		<energyOnStart>1</energyOnStart>
+		<removeOnBreak>true</removeOnBreak>
+
+		<blocksRangedDamage>false</blocksRangedDamage>
+		<blocksExplosions>true</blocksExplosions>
+		<blocksMeleeDamage>true</blocksMeleeDamage>
+		
+        <whitelistedDamageDefs>
+          <li>Cut</li>
+		  <li>Crush</li>
+		  <li>Blunt</li>
+		  <li>Poke</li>
+		  <li>Stab</li>
+		  <li>Scratch</li>
+		  <li>ScratchToxic</li>
+		  <li>Bite</li>
+		  <li>ToxicBite</li>
+		  <li>RangedStab</li>
+		  <li>Bullet</li>
+		  <li>Arrow</li>
+		  <li>ArrowHighVelocity</li>
+		  <li>TornadoScratch</li>
+        </whitelistedDamageDefs>
+		<blacklistedDamageDefs>
+		  <li>guy762_RangedDamage_disruptor</li>
+		  <li>guy762_BeamDamage_disruptor</li>
+          <li>guy762_MeleeDamage_unstoppable</li>
+        </blacklistedDamageDefs>
+		
+		<shatterOn>
+		  <li>EMP</li>
+		  <li>guy762_RangedDamage_ion</li>
+		  <li>guy762_ExplosiveDamage_ion</li>
+		  <li>guy762_MeleeDamage_ion</li>
+		  <li>guy762_GrenadeDamage_ion</li>
+		</shatterOn>
+
+        <absorbFleck>ExplosionFlash</absorbFleck>
+        <breakFleck>ExplosionFlash</breakFleck>
+        <shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+        <absorbSound>kotorsound_shieldhit</absorbSound>
+        <resetSound>kotorsound_shieldpowerup</resetSound>
+
+        <displayGizmo>true</displayGizmo>
+        <gizmoTitle>debris shield</gizmoTitle>
+        <gizmoTip>A shield hediff that blocks all melee and kinetic damage.</gizmoTip>
+
+        <minDrawSize>2.5</minDrawSize>
+        <maxDrawSize>3.75</maxDrawSize>
+        <scaleWithOwner>true</scaleWithOwner>
+        <graphicData>
+          <texPath>Other/ShieldBubble</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>Transparent</shaderType>
+          <color>(1.0, 0, 1.0)</color>
+        </graphicData>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>12000</disappearsAfterTicks>
+		<showRemainingTime>true</showRemainingTime>
+	  </li>
+	  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+	  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+  
+
+	
+	<HediffDef>
+		<defName>guy762_HvyEShield_echani</defName>
+		<label>Echani heavy shield</label>
+		<description>An energy shield that blocks all incoming energy, electrical, and sonic damage.</description>
+		<defaultLabelColor>(0, 0, 1.0)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+		  <li Class="AthenaFramework.HediffCompProperties_Shield">
+			<maxEnergy>100</maxEnergy>
+			<energyRechargeRate>0.001</energyRechargeRate>
+			<energyPerDamageModifier>0.35</energyPerDamageModifier>
+			<resetDelay>3200</resetDelay>
+			<energyOnStart>1</energyOnStart>
+			<removeOnBreak>true</removeOnBreak>
+
+			<blocksRangedDamage>true</blocksRangedDamage>
+			<blocksExplosions>true</blocksExplosions>
+			<blocksMeleeDamage>false</blocksMeleeDamage>
+			
+			<whitelistedDamageDefs>
+			  <li>guy762_RangedDamage_energy</li>
+			  <li>guy762_BeamDamage_energy</li>
+			  <li>guy762_MeleeDamage_energy</li>
+			  <li>guy762_MeleeDamage_ecut</li>
+			  <li>guy762_MeleeDamage_estab</li>
+			  <li>guy762_ExplosiveDamage_energy</li>
+			  <li>guy762_GrenadeDamage_energy</li>
+			  <li>guy762_GrenadeDamage_thermaldet</li>
+			  <li>Beam</li>
+			  <li>guy762_RangedDamage_electrical</li>
+			  <li>guy762_MeleeDamage_electrical</li>
+			  <li>guy762_BeamDamage_electrical</li>
+			  <li>guy762_RangedDamage_sonic</li>
+			  <li>guy762_MeleeDamage_sonic</li>
+			  <li>guy762_GrenadeDamage_sonic</li>
+			  <li>Thump</li>
+			</whitelistedDamageDefs>
+			<blacklistedDamageDefs>
+			  <li>guy762_RangedDamage_disruptor</li>
+			  <li>guy762_BeamDamage_disruptor</li>
+			  <li>guy762_MeleeDamage_unstoppable</li>
+			</blacklistedDamageDefs>
+			
+			<shatterOn>
+			  <li>EMP</li>
+			  <li>guy762_RangedDamage_ion</li>
+			  <li>guy762_ExplosiveDamage_ion</li>
+			  <li>guy762_MeleeDamage_ion</li>
+			  <li>guy762_GrenadeDamage_ion</li>
+			</shatterOn>
+
+			<absorbFleck>ExplosionFlash</absorbFleck>
+			<breakFleck>ExplosionFlash</breakFleck>
+			<shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+			<absorbSound>kotorsound_shieldhit</absorbSound>
+			<resetSound>kotorsound_shieldpowerup</resetSound>
+
+			<displayGizmo>true</displayGizmo>
+			<gizmoTitle>Echani shield</gizmoTitle>
+			<gizmoTip>A shield hediff that blocks all energy and sonic damage.</gizmoTip>
+
+			<minDrawSize>2.5</minDrawSize>
+			<maxDrawSize>3.75</maxDrawSize>
+			<scaleWithOwner>true</scaleWithOwner>
+			<graphicData>
+			  <texPath>Other/ShieldBubble</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <shaderType>Transparent</shaderType>
+			  <color>(0, 0, 1.0)</color>
+			</graphicData>
+		  </li>
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>12000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	  </HediffDef>
+  
+
+	
+	<HediffDef>
+		<defName>guy762_HvyEShield_baragwin</defName>
+		<label>Baragwin shield</label>
+		<description>An energy shield that blocks all incoming energy, electrical, sonic, heat, and cold damage.</description>
+		<defaultLabelColor>(1.0, 1.0, 0)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+		  <li Class="AthenaFramework.HediffCompProperties_Shield">
+			<maxEnergy>120</maxEnergy>
+			<energyRechargeRate>0.001</energyRechargeRate>
+			<energyPerDamageModifier>0.35</energyPerDamageModifier>
+			<resetDelay>3200</resetDelay>
+			<energyOnStart>1</energyOnStart>
+			<removeOnBreak>true</removeOnBreak>
+
+			<blocksRangedDamage>true</blocksRangedDamage>
+			<blocksExplosions>true</blocksExplosions>
+			<blocksMeleeDamage>false</blocksMeleeDamage>
+			
+			<whitelistedDamageDefs>
+			  <li>guy762_RangedDamage_energy</li>
+			  <li>guy762_BeamDamage_energy</li>
+			  <li>guy762_MeleeDamage_energy</li>
+			  <li>guy762_MeleeDamage_ecut</li>
+			  <li>guy762_MeleeDamage_estab</li>
+			  <li>guy762_ExplosiveDamage_energy</li>
+			  <li>guy762_GrenadeDamage_energy</li>
+			  <li>guy762_GrenadeDamage_thermaldet</li>
+			  <li>Beam</li>
+			  <li>guy762_RangedDamage_electrical</li>
+			  <li>guy762_MeleeDamage_electrical</li>
+			  <li>guy762_BeamDamage_electrical</li>
+			  <li>guy762_RangedDamage_sonic</li>
+			  <li>guy762_MeleeDamage_sonic</li>
+			  <li>guy762_GrenadeDamage_sonic</li>
+			  <li>Thump</li>
+			  <li>Flame</li>
+			  <li>Burn</li>
+			  <li>guy762_GrenadeDamage_plasma</li>
+			  <li>guy762_BeamDamage_radiation</li>
+			  <li>Frostbite</li>
+			</whitelistedDamageDefs>
+			<blacklistedDamageDefs>
+			  <li>guy762_RangedDamage_disruptor</li>
+			  <li>guy762_BeamDamage_disruptor</li>
+			  <li>guy762_MeleeDamage_unstoppable</li>
+			</blacklistedDamageDefs>
+			
+			<shatterOn>
+			  <li>EMP</li>
+			  <li>guy762_RangedDamage_ion</li>
+			  <li>guy762_ExplosiveDamage_ion</li>
+			  <li>guy762_MeleeDamage_ion</li>
+			  <li>guy762_GrenadeDamage_ion</li>
+			</shatterOn>
+
+			<absorbFleck>ExplosionFlash</absorbFleck>
+			<breakFleck>ExplosionFlash</breakFleck>
+			<shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+			<absorbSound>kotorsound_shieldhit</absorbSound>
+			<resetSound>kotorsound_shieldpowerup</resetSound>
+
+			<displayGizmo>true</displayGizmo>
+			<gizmoTitle>Baragwin shield</gizmoTitle>
+			<gizmoTip>A shield hediff that blocks all energy, sonic, heat, and cold damage.</gizmoTip>
+
+			<minDrawSize>2.5</minDrawSize>
+			<maxDrawSize>3.75</maxDrawSize>
+			<scaleWithOwner>true</scaleWithOwner>
+			<graphicData>
+			  <texPath>Other/ShieldBubble</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <shaderType>Transparent</shaderType>
+			  <color>(1.0, 0, 0)</color>
+			</graphicData>
+		  </li>
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>12000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	  </HediffDef>
+	  
+
+	
+	<HediffDef>
+		<defName>guy762_HvyEShield_ion</defName>
+		<label>heavy ion shield</label>
+		<description>An energy shield that blocks all incoming energy, electrical, EMP, and ion damage but is instead vulnerable to sonic damage.</description>
+		<defaultLabelColor>(0, 0, 1.0)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+		  <li Class="AthenaFramework.HediffCompProperties_Shield">
+			<maxEnergy>150</maxEnergy>
+			<energyRechargeRate>0.001</energyRechargeRate>
+			<energyPerDamageModifier>0.35</energyPerDamageModifier>
+			<resetDelay>3200</resetDelay>
+			<energyOnStart>1</energyOnStart>
+			<removeOnBreak>true</removeOnBreak>
+
+			<blocksRangedDamage>true</blocksRangedDamage>
+			<blocksExplosions>true</blocksExplosions>
+			<blocksMeleeDamage>false</blocksMeleeDamage>
+			
+			<whitelistedDamageDefs>
+			  <li>guy762_RangedDamage_energy</li>
+			  <li>guy762_BeamDamage_energy</li>
+			  <li>guy762_MeleeDamage_energy</li>
+			  <li>guy762_MeleeDamage_ecut</li>
+			  <li>guy762_MeleeDamage_estab</li>
+			  <li>guy762_ExplosiveDamage_energy</li>
+			  <li>guy762_GrenadeDamage_energy</li>
+			  <li>guy762_GrenadeDamage_thermaldet</li>
+			  <li>Beam</li>
+			  <li>guy762_RangedDamage_electrical</li>
+			  <li>guy762_MeleeDamage_electrical</li>
+			  <li>guy762_BeamDamage_electrical</li>
+			  
+			  <li>guy762_RangedDamage_ion</li>
+			  <li>guy762_ExplosiveDamage_ion</li>
+			  <li>guy762_MeleeDamage_ion</li>
+			  <li>guy762_GrenadeDamage_ion</li>
+			  <li>EMP</li>
+			</whitelistedDamageDefs>
+			<blacklistedDamageDefs>
+			  <li>guy762_RangedDamage_disruptor</li>
+			  <li>guy762_BeamDamage_disruptor</li>
+			  <li>guy762_MeleeDamage_unstoppable</li>
+			</blacklistedDamageDefs>
+			
+			<shatterOn>
+			  <li>guy762_RangedDamage_sonic</li>
+			  <li>guy762_MeleeDamage_sonic</li>
+			  <li>guy762_GrenadeDamage_sonic</li>
+			  <li>Thump</li>
+			</shatterOn>
+
+			<absorbFleck>ExplosionFlash</absorbFleck>
+			<breakFleck>ExplosionFlash</breakFleck>
+			<shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+			<absorbSound>kotorsound_shieldhit</absorbSound>
+			<resetSound>kotorsound_shieldpowerup</resetSound>
+
+			<displayGizmo>true</displayGizmo>
+			<gizmoTitle>ion shield</gizmoTitle>
+			<gizmoTip>A shield hediff that blocks all energy, EMP, and ion damage, but shatters against sonic damage.</gizmoTip>
+
+			<minDrawSize>2.5</minDrawSize>
+			<maxDrawSize>3.75</maxDrawSize>
+			<scaleWithOwner>true</scaleWithOwner>
+			<graphicData>
+			  <texPath>Other/ShieldBubble</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <shaderType>Transparent</shaderType>
+			  <color>(0, 0, 1.0)</color>
+			</graphicData>
+		  </li>
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>12000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	  </HediffDef>
+  
+
+	
+	
+	
+	
+	
+	
+	
+	<HediffDef>
+		<defName>guy762_HvyEShield_deflector</defName>
+		<label>heavy deflector shield</label>
+		<description>An energy shield that blocks and deflects incoming energy damage.</description>
+		<defaultLabelColor>(0, 1.0, 0)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+		  <li Class="DeflectorHediff.HediffCompProperties_Deflector">
+			<baseDeflectChance>0.75</baseDeflectChance>
+			<useManipulationInCalc>false</useManipulationInCalc>
+			<canReflect>true</canReflect>
+			
+			<deflectSound>kotorsound_shielddeflect_big</deflectSound>
+			<canDeflectMelee>false</canDeflectMelee>
+			<DeflectVerb Class="VerbProperties">
+			  <verbClass>Verb_Shoot</verbClass>
+			  <hasStandardCommand>true</hasStandardCommand>
+			  <defaultProjectile>BulletDeflected</defaultProjectile>
+			  <warmupTime>0</warmupTime>
+			  <range>24</range>
+			  <muzzleFlashScale>9</muzzleFlashScale>
+			</DeflectVerb>
+		  </li>
+		  <li Class="AthenaFramework.HediffCompProperties_Shield">
+			<maxEnergy>160</maxEnergy>
+			<energyRechargeRate>0.75</energyRechargeRate>
+			<energyPerDamageModifier>1</energyPerDamageModifier>
+			<resetDelay>3200</resetDelay>
+			<energyOnStart>1</energyOnStart>
+			<removeOnBreak>true</removeOnBreak>
+
+			<blocksRangedDamage>true</blocksRangedDamage>
+			<blocksExplosions>true</blocksExplosions>
+			<blocksMeleeDamage>false</blocksMeleeDamage>
+			
+			<whitelistedDamageDefs>
+			  <li>guy762_RangedDamage_energy</li>
+			  <li>guy762_BeamDamage_energy</li>
+			  <li>guy762_MeleeDamage_energy</li>
+			  <li>guy762_MeleeDamage_ecut</li>
+			  <li>guy762_MeleeDamage_estab</li>
+			  <li>guy762_ExplosiveDamage_energy</li>
+			  <li>guy762_GrenadeDamage_energy</li>
+			  <li>guy762_GrenadeDamage_thermaldet</li>
+			  <li>Beam</li>
+			</whitelistedDamageDefs>
+			<blacklistedDamageDefs>
+			  <li>guy762_RangedDamage_disruptor</li>
+			  <li>guy762_BeamDamage_disruptor</li>
+			  <li>guy762_MeleeDamage_unstoppable</li>
+			</blacklistedDamageDefs>
+			
+			<shatterOn>
+			  <li>EMP</li>
+			  <li>guy762_RangedDamage_ion</li>
+			  <li>guy762_ExplosiveDamage_ion</li>
+			  <li>guy762_MeleeDamage_ion</li>
+			  <li>guy762_GrenadeDamage_ion</li>	
+			</shatterOn>
+
+			<absorbFleck>ExplosionFlash</absorbFleck>
+			<breakFleck>ExplosionFlash</breakFleck>
+			<shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+			<absorbSound>kotorsound_shieldhit</absorbSound>
+			<resetSound>kotorsound_shieldpowerup</resetSound>
+
+			<displayGizmo>true</displayGizmo>
+			<gizmoTitle>deflector shield</gizmoTitle>
+			<gizmoTip>A shield hediff that blocks energy damage.</gizmoTip>
+
+			<minDrawSize>2.5</minDrawSize>
+			<maxDrawSize>3.75</maxDrawSize>
+			<scaleWithOwner>true</scaleWithOwner>
+			<graphicData>
+			  <texPath>Other/ShieldBubble</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <shaderType>Transparent</shaderType>
+			  <color>(0, 1.0, 0)</color>
+			</graphicData>
+		  </li>
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>6000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	  </HediffDef>
+	  
+
+		
+		
+	<HediffDef>
+		<defName>guy762_HvyEShield_balmorran</defName>
+		<label>Balmorran overshield</label>
+		<description>An energy shield that blocks all incoming energy, electrical, sonic, heat, and cold damage.</description>
+		<defaultLabelColor>(0, 0.25, 1.0)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+		  <li Class="AthenaFramework.HediffCompProperties_Shield">
+			<maxEnergy>200</maxEnergy>
+			<energyRechargeRate>0.001</energyRechargeRate>
+			<energyPerDamageModifier>0.35</energyPerDamageModifier>
+			<resetDelay>3200</resetDelay>
+			<energyOnStart>1</energyOnStart>
+			<removeOnBreak>true</removeOnBreak>
+
+			<blocksRangedDamage>true</blocksRangedDamage>
+			<blocksExplosions>true</blocksExplosions>
+			<blocksMeleeDamage>false</blocksMeleeDamage>
+			
+			<whitelistedDamageDefs>
+			  <li>guy762_RangedDamage_energy</li>
+			  <li>guy762_BeamDamage_energy</li>
+			  <li>guy762_MeleeDamage_energy</li>
+			  <li>guy762_MeleeDamage_ecut</li>
+			  <li>guy762_MeleeDamage_estab</li>
+			  <li>guy762_ExplosiveDamage_energy</li>
+			  <li>guy762_GrenadeDamage_energy</li>
+			  <li>guy762_GrenadeDamage_thermaldet</li>
+			  <li>Beam</li>
+			  <li>guy762_RangedDamage_electrical</li>
+			  <li>guy762_MeleeDamage_electrical</li>
+			  <li>guy762_BeamDamage_electrical</li>
+			  <li>guy762_RangedDamage_sonic</li>
+			  <li>guy762_MeleeDamage_sonic</li>
+			  <li>guy762_GrenadeDamage_sonic</li>
+			  <li>Thump</li>
+			  <li>Flame</li>
+			  <li>Burn</li>
+			  <li>guy762_GrenadeDamage_plasma</li>
+			  <li>guy762_BeamDamage_radiation</li>
+			  <li>Frostbite</li>
+			</whitelistedDamageDefs>
+			<blacklistedDamageDefs>
+			  <li>guy762_RangedDamage_disruptor</li>
+			  <li>guy762_BeamDamage_disruptor</li>
+			  <li>guy762_MeleeDamage_unstoppable</li>
+			</blacklistedDamageDefs>
+			
+			<shatterOn>
+			  <li>EMP</li>
+			  <li>guy762_RangedDamage_ion</li>
+			  <li>guy762_ExplosiveDamage_ion</li>
+			  <li>guy762_MeleeDamage_ion</li>
+			  <li>guy762_GrenadeDamage_ion</li>	
+			</shatterOn>
+			
+
+			<absorbFleck>ExplosionFlash</absorbFleck>
+			<breakFleck>ExplosionFlash</breakFleck>
+			<shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+			<absorbSound>kotorsound_shieldhit</absorbSound>
+			<resetSound>kotorsound_shieldpowerup</resetSound>
+
+			<displayGizmo>true</displayGizmo>
+			<gizmoTitle>Balmorran overshield</gizmoTitle>
+			<gizmoTip>A shield hediff that blocks all energy, sonic, and thermal damage.</gizmoTip>
+
+			<minDrawSize>2.5</minDrawSize>
+			<maxDrawSize>3.75</maxDrawSize>
+			<scaleWithOwner>true</scaleWithOwner>
+			<graphicData>
+			  <texPath>Other/ShieldBubble</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <shaderType>Transparent</shaderType>
+			  <color>(1.0, 0, 0)</color>
+			</graphicData>
+		  </li>
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>12000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	  </HediffDef>
+	  
+
+		
+		
+	<HediffDef>
+		<defName>guy762_HvyEShield_starforge</defName>
+		<label>Star Forge shield</label>
+		<description>An energy shield that blocks almost all incoming damage.</description>
+		<defaultLabelColor>(0.5, 0, 1.0)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+		  <li Class="AthenaFramework.HediffCompProperties_Shield">
+			<maxEnergy>300</maxEnergy>
+			<energyRechargeRate>0.001</energyRechargeRate>
+			<energyPerDamageModifier>0.35</energyPerDamageModifier>
+			<resetDelay>3200</resetDelay>
+			<energyOnStart>1</energyOnStart>
+			<removeOnBreak>true</removeOnBreak>
+
+			<blocksRangedDamage>true</blocksRangedDamage>
+			<blocksExplosions>true</blocksExplosions>
+			<blocksMeleeDamage>true</blocksMeleeDamage>
+			
+			<!--whitelistedDamageDefs>
+			  <li>guy762_RangedDamage_energy</li>
+			  <li>guy762_BeamDamage_energy</li>
+			  <li>guy762_ExplosiveDamage_energy</li>
+			  <li>guy762_GrenadeDamage_energy</li>
+			  <li>guy762_GrenadeDamage_thermaldet</li>
+			  <li>Beam</li>
+			  <li>guy762_MeleeDamage_energy</li>
+			  <li>guy762_MeleeDamage_ecut</li>
+			  <li>guy762_MeleeDamage_estab</li>
+			  <li>Cut</li>
+			  <li>Crush</li>
+			  <li>Blunt</li>
+			  <li>Poke</li>
+			  <li>Stab</li>
+			  <li>Scratch</li>
+			  <li>ScratchToxic</li>
+			  <li>Bite</li>
+			  <li>ToxicBite</li>
+			  <li>RangedStab</li>
+			  <li>Bullet</li>
+			  <li>Arrow</li>
+			  <li>ArrowHighVelocity</li>
+			  <li>TornadoScratch</li>
+			</whitelistedDamageDefs-->
+			<blacklistedDamageDefs>
+			  <li>guy762_RangedDamage_disruptor</li>
+			  <li>guy762_BeamDamage_disruptor</li>
+			  <li>guy762_MeleeDamage_unstoppable</li>
+			</blacklistedDamageDefs>
+			
+			<shatterOn>
+			  <li>EMP</li>
+			  <li>guy762_RangedDamage_ion</li>
+			  <li>guy762_ExplosiveDamage_ion</li>
+			  <li>guy762_MeleeDamage_ion</li>
+			  <li>guy762_GrenadeDamage_ion</li>
+			</shatterOn>
+
+			<absorbFleck>ExplosionFlash</absorbFleck>
+			<breakFleck>ExplosionFlash</breakFleck>
+			<shieldBreakEffecter>Shield_Break</shieldBreakEffecter>
+			<absorbSound>kotorsound_shieldhit</absorbSound>
+			<resetSound>kotorsound_shieldpowerup</resetSound>
+
+			<displayGizmo>true</displayGizmo>
+			<gizmoTitle>energy shield</gizmoTitle>
+			<gizmoTip>A shield hediff that blocks almost all damage.</gizmoTip>
+
+			<minDrawSize>2.5</minDrawSize>
+			<maxDrawSize>3.75</maxDrawSize>
+			<scaleWithOwner>true</scaleWithOwner>
+			<graphicData>
+			  <texPath>Other/ShieldBubble</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <shaderType>Transparent</shaderType>
+			  <color>(0.5, 0, 1.0)</color>
+			</graphicData>
+		  </li>
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>12000</disappearsAfterTicks>
+			<showRemainingTime>true</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	  </HediffDef>
+  
+
+	
+	
+  
+</Defs>

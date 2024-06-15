@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Add KotOR droids to MHC's Surgery Recipes at the abstract level -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[@Name="ABF_Recipe_Synstruct_SurgeryBase"]/recipeUsers</xpath>
+        <value>
+            <li>guy762_DroidRace_T3series</li>
+            <li>guy762_DroidRace_3Cseries</li>
+            <li>guy762_DroidRace_ITseries</li>
+            <li>guy762_DroidRace_HKseries</li>
+            <li>guy762_DroidRace_HK50series</li>
+            <li>guy762_DroidRace_HK51series</li>
+            <li>guy762_DroidRace_R8009UD</li>
+            <li>guy762_DroidRace_GE3PD</li>
+            <li>guy762_DroidRace_GE3LD</li>
+            <li>guy762_DroidRace_DevWD</li>
+            <li>guy762_DroidRace_DevAD</li>
+            <li>guy762_DroidRace_SentWD</li>
+			<li>guy762_DroidRace_ADMkI</li>
+            <li>guy762_DroidRace_ADMkI_sf</li>
+            <li>guy762_DroidRace_ADMkIV</li>
+            <li>guy762_DroidRace_ADMkIV_sith</li>
+            <li>guy762_DroidRace_KM1MD</li>
+            <li>guy762_DroidRace_KM1HMD</li>
+            <li>guy762_DroidRace_KX12UPD</li>
+            <li>guy762_DroidRace_KX12APD</li>
+            <li>guy762_DroidRace_GOTO</li>
+        </value>
+    </Operation>
+
+    
+
+</Patch>

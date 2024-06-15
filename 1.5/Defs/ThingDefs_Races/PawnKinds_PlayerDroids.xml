@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <PawnKindDef Name="guy762_DroidPawnKindBase" ParentName="BasePlayerPawnKind" Abstract="True">
+        <label>colony droid</label>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<maxGenerationAge>1</maxGenerationAge>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>13~21</initialResistanceRange>
+		<modExtensions>
+            <li Class="ArtificialBeings.ABF_ArtificialPawnKindExtension">
+                <pawnState>Reprogrammable</pawnState>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="KotORDroidColonist_T3UD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_T3UD</defName>
+		<label>specialist droid</label>
+		<race>guy762_DroidRace_T3series</race>
+		<nameMaker>guy762_DroidNamer_T3</nameMaker>  <!-- ATTENTION: REQUIRED FOR ALL T3 PAWNS-->
+        <combatPower>50</combatPower>
+		<forcedTraits>
+			<TooSmart>0</TooSmart>
+			<Asexual>0</Asexual>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_TsUD_T3</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_3CUD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_3CUD</defName>
+		<label>utility droid</label>
+		<race>guy762_DroidRace_3Cseries</race>
+        <combatPower>30</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_TsUD_3C</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_ITUD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_ITUD</defName>
+		<label>specialist droid</label>
+		<race>guy762_DroidRace_ITseries</race>
+        <combatPower>30</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_TsUD_IT</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="KotORDroidColonist_R8009UD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_R8009UD</defName>
+		<label>utility droid</label>
+		<race>guy762_DroidRace_R8009UD</race>
+        <combatPower>20</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_R8009UD</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_GE3LD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_GE3LD</defName>
+		<label>labor droid</label>
+		<race>guy762_DroidRace_GE3LD</race>
+        <combatPower>10</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_GE3LD</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_GE3PD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_GE3PD</defName>
+		<label>protocol droid</label>
+		<race>guy762_DroidRace_GE3PD</race>
+        <combatPower>10</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_GE3PD</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="KotORDroidColonist_KX12UPD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_KX12UPD</defName>
+		<label>probe droid</label>
+		<race>guy762_DroidRace_KX12UPD</race>
+        <combatPower>20</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_KX12UPD</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_KX12APD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_KX12APD</defName>
+		<label>assassin probe</label>
+		<race>guy762_DroidRace_KX12APD</race>
+        <combatPower>50</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_KX12APD</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_MPDMkI" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_MPDMkI</defName>
+		<label>patrol droid</label>
+		<race>guy762_DroidRace_MPDMkI</race>
+        <combatPower>20</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_MPDMkI</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="KotORDroidColonist_KM1MD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_KM1MD</defName>
+		<label>mining droid</label>
+		<race>guy762_DroidRace_KM1MD</race>
+        <combatPower>30</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_KM1MD</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_KM1HMD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_KM1HMD</defName>
+		<label>excavation droid</label>
+		<race>guy762_DroidRace_KM1HMD</race>
+        <combatPower>40</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_KM1MD</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="KotORDroidColonist_SentWD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_SentWD</defName>
+		<label>war droid</label>
+		<race>guy762_DroidRace_SentWD</race>
+        <combatPower>50</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_SentWD</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_DevWD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_DevWD</defName>
+		<label>battle droid</label>
+		<race>guy762_DroidRace_DevWD</race>
+        <combatPower>30</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_DevWD</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_DevAD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_DevAD</defName>
+		<label>assassin droid</label>
+		<race>guy762_DroidRace_DevAD</race>
+        <combatPower>60</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_DevAD</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="KotORDroidColonist_ADMkI" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_ADMkI</defName>
+		<label>assault droid</label>
+		<race>guy762_DroidRace_ADMkI</race>
+        <combatPower>70</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_assault_mk1</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_ADMkI_sf" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_ADMkI_sf</defName>
+		<label>star forge droid</label>
+		<race>guy762_DroidRace_ADMkI_sf</race>
+        <combatPower>100</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_assault_mk1</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_ADMkIV" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_ADMkIV</defName>
+		<label>heavy assault droid</label>
+		<race>guy762_DroidRace_ADMkIV</race>
+        <combatPower>90</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_assault_mk4</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_ADMkIV_sith" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_ADMkIV_sith</defName>
+		<label>heavy assault droid</label>
+		<race>guy762_DroidRace_ADMkIV_sith</race>
+        <combatPower>120</combatPower>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_assault_mk4</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	
+	
+	
+	<PawnKindDef Name="KotORDroidColonist_HK50AD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_HK50AD</defName>
+		<label>HK-50 unit</label>
+		<race>guy762_DroidRace_HK50series</race>
+        <combatPower>100</combatPower>
+		<forcedTraits>
+			<!--ATR_FeelingsTowardOrganics>4</ATR_FeelingsTowardOrganics-->
+			<ShootingAccuracy>-1</ShootingAccuracy>
+			<Psychopath>0</Psychopath>
+			<Bloodlust>0</Bloodlust>
+			<Asexual>0</Asexual>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_HK50_</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="KotORDroidColonist_HK51AD" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_HK51AD</defName>
+		<label>HK-51 unit</label>
+		<race>guy762_DroidRace_HK51series</race>
+        <combatPower>100</combatPower>
+		<forcedTraits>
+			<!--ATR_FeelingsTowardOrganics>2</ATR_FeelingsTowardOrganics-->
+			<ShootingAccuracy>1</ShootingAccuracy>
+			<Bloodlust>0</Bloodlust>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_HK51_</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="KotORDroidColonist_GOTO" ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORDroidColonist_GOTO</defName>
+		<label>specialist droid</label>
+		<race>guy762_DroidRace_GOTO</race>
+        <combatPower>100</combatPower>
+		<forcedTraits>
+			<TooSmart>0</TooSmart>
+			<Psychopath>0</Psychopath>
+			<AnnoyingVoice>0</AnnoyingVoice>
+			<Asexual>0</Asexual>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_GOTO</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="KotORMIBColonist_HK51AD" ParentName="KotORDroidColonist_HK51AD">
+		<defName>KotORMIBColonist_HK51AD</defName>
+        <combatPower>200</combatPower>
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>9999</apparelMoney>
+		<apparelTags>
+		  <li>KotORDroidArmorT2_weak</li>
+		  <li>KotORDroidWeapon_hvy_any</li>
+		  <li>KotORDroidShield_weak</li>
+		  <li>KotORDroidUpgrade_combat</li>
+		</apparelTags>
+		<!--apparelRequired>
+		  <li>guy762_DroidWeapon_kolto</li>
+		</apparelRequired-->
+		<weaponMoney>1600</weaponMoney>
+		<weaponTags>
+		  <li>EXC_assassin</li>
+		</weaponTags>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_repairkit_con</thingDef>
+				<countRange>3~6</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="KotORPlayableHero_HK47"  ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORPlayableHero_HK47</defName>
+		<label>HK unit</label>
+		<minGenerationAge>14</minGenerationAge>
+		<maxGenerationAge>15</maxGenerationAge>
+		<race>guy762_DroidRace_HKseries</race>
+		<combatPower>500</combatPower>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>29999</apparelMoney>
+		<apparelTags>
+		  <li>KotORDroidArmorT2_weak</li>
+		  <li>KotORDroidWeapon_hvy_any</li>
+		  <li>KotORDroidShield_weak</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_DroidSensor_hk</li>	
+		</apparelRequired>
+		<weaponMoney>99999999</weaponMoney>
+		<weaponTags>
+		  <li>SaV_hk47</li>
+		</weaponTags>
+		<biocodeWeaponChance>1</biocodeWeaponChance>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<!--ATR_FeelingsTowardOrganics>3</ATR_FeelingsTowardOrganics-->
+			<Psychopath>0</Psychopath>
+			<Bloodlust>0</Bloodlust>
+			<Asexual>0</Asexual>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_HK47_</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<modExtensions Inherit="False">
+            <li Class="ArtificialBeings.ABF_ArtificialPawnKindExtension">
+                <pawnState>Reprogrammable</pawnState>
+            </li>
+        </modExtensions>
+	  </PawnKindDef>
+	  
+	  <PawnKindDef Name="KotORPlayableHero_T3M4"  ParentName="guy762_DroidPawnKindBase">
+		<defName>KotORPlayableHero_T3M4</defName>
+		<label>T3 unit</label>
+		<minGenerationAge>9</minGenerationAge>
+		<maxGenerationAge>10</maxGenerationAge>
+		<nameMaker>guy762_HeroNamer_T3M4</nameMaker>
+		<skinColorOverride>(235,255,255)</skinColorOverride>
+		<race>guy762_DroidRace_T3series</race>
+		<combatPower>100</combatPower>
+		<itemQuality>Legendary</itemQuality>
+		<apparelMoney>29999</apparelMoney>
+		<apparelTags>
+		  <li>KotORDroidArmorT1_weak</li>
+		  <li>KotORDroidWeapon_light_any</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_DroidHardware_regen</li>
+		   <li>guy762_DroidShield_renewable</li>
+		   <li>guy762_DroidGadget_shock</li>
+		</apparelRequired>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<TooSmart>0</TooSmart>
+			<Asexual>0</Asexual>
+		</forcedTraits>
+		<backstoryFiltersOverride>
+		  <li>
+			<categories>
+			  <li>guy762BSC_Droid_TsUD_T3</li>
+			</categories>
+		  </li>
+		</backstoryFiltersOverride>
+		<modExtensions Inherit="False">
+            <li Class="ArtificialBeings.ABF_ArtificialPawnKindExtension">
+                <pawnState>Reprogrammable</pawnState>
+            </li>
+        </modExtensions>
+	  </PawnKindDef>
+
+
+
+</Defs>

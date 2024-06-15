@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  
+  <ThingDef ParentName="guy762_HvyShieldCraftableBase">
+    <defName>guy762_HvyShield_basic</defName>
+    <label>heavy energy shield</label>
+    <description>Designed for assault droids and military patrol speeders, this larger class of shield generator provides an additional layer of defense to objects too big for normal shield devices.</description>
+    <graphicData>
+      <texPath>Items/hvyshield/hvyshield_grey</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      
+	  <WorkToMake>7500</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_hvyshields</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<KOTOR_AlloyDurasteel>30</KOTOR_AlloyDurasteel>
+		<ComponentSpacer>4</ComponentSpacer>
+		<KOTOR_PlasmaCartridge>4</KOTOR_PlasmaCartridge>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORHvyShield_weak</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_HeavyShields</li>
+	  <li>guy762TT_SpeederEquipment</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_HvyEShield_basic</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_HvyShieldBase">
+    <defName>guy762_HvyShield_thermal</defName>
+    <label>heavy thermal shield</label>
+    <description>When equipped and activated, these safety energy shields project a safety shield around mining droids, protecting them from temperature extremes, accidental thermal detonations, and plasma burns.</description>
+    <graphicData>
+      <texPath>Items/hvyshield/hvyshield_rdgry</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>800</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_miningdroid</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_HeavyShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_HvyEShield_thermal</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_HvyShieldCraftableBase">
+    <defName>guy762_HvyShield_env</defName>
+    <label>heavy environmental shield</label>
+    <description>This variant of environmental shielding is designed for frontline combat droids and speeder bikes operating in hazardous environments.</description>
+    <graphicData>
+      <texPath>Items/hvyshield/hvyshield_yt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      
+	  <WorkToMake>10000</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_hvyshields</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<KOTOR_AlloyDurasteel>30</KOTOR_AlloyDurasteel>
+		<ComponentSpacer>4</ComponentSpacer>
+		<KOTOR_PlasmaCartridge>4</KOTOR_PlasmaCartridge>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORHvyShield_weak</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_HeavyShields</li>
+	  <li>guy762TT_SpeederEquipment</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_HvyEShield_env</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_HvyShieldBase">
+    <defName>guy762_HvyShield_debris</defName>
+    <label>heavy debris shield</label>
+    <description>Shield units such as these are manufactured by Lhosan Industries for use on their various speeder models. Their primary purpose is to protect the vehicle and the rider from incoming environmental debris, though they can easily provide a solid defense against melee attacks to war droids as well.</description>
+    <graphicData>
+      <texPath>Items/hvyshield/hvyshield_orng</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORHvyShield_civilian</li>
+		<li>KotORHvyShield_melee</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_HeavyShields</li>
+	  <li>guy762TT_SpeederEquipment</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_HvyEShield_debris</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_HvyShieldBase">
+    <defName>guy762_HvyShield_echani</defName>
+    <label>Echani heavy shield</label>
+    <description>Though the Echani specialize in neither war droid nor speeder production, their skills with shield technology are simply too great not to have some kind of foothold in these two markets.</description>
+    <graphicData>
+      <texPath>Items/hvyshield/hvyshield_tan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>3350</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORHvyShield_mid</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_HeavyShields</li>
+	  <li>guy762TT_SpeederEquipment</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_HvyEShield_echani</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>  
+  
+  <ThingDef ParentName="guy762_HvyShieldBase">
+    <defName>guy762_HvyShield_baragwin</defName>
+    <label>Baragwin heavy shield</label>
+    <description>The Baragwin are experts in heavy-duty military equipment, and these shield generators are among their most popular products.</description>
+    <graphicData>
+      <texPath>Items/hvyshield/hvyshield_blk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>4600</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORHvyShield_mid</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_HeavyShields</li>
+	  <li>guy762TT_SpeederEquipment</li>
+	  <li>guy762TT_Baragwin</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_HvyEShield_baragwin</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="guy762_HvyShieldCraftableBase">
+    <defName>guy762_HvyShield_ion</defName>
+    <label>heavy ion shield</label>
+    <description>New, experimental shields such as this are capable of diffusing the negative effects of ion-based weaponry and electromagnetic pulses. As an unfortunate side effect of the ion-dampening process, however, the shield bubble is particularly vulnerable to high-frequency sonic attacks and will easily destabilize if hit by one.</description>
+    <graphicData>
+      <texPath>Items/hvyshield/hvyshield_blu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>6500</MarketValue>
+      
+	  <WorkToMake>12000</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_iondamp</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<KOTOR_AlloyDurasteel>30</KOTOR_AlloyDurasteel>
+		<ComponentSpacer>8</ComponentSpacer>
+		<KOTOR_PlasmaCartridge>4</KOTOR_PlasmaCartridge>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORHvyShield_strong</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_HeavyShields</li>
+	  <li>guy762TT_SpeederEquipment</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_HvyEShield_ion</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_HvyShieldCraftableBase">
+    <defName>guy762_HvyShield_deflector</defName>
+    <label>heavy deflector grid</label>
+    <description>Originally designed by the Iridonian engineer Bao-Dur for large-scale planetary defense, deflector shielding has since been adapted to a more lucrative market: heavy war droids.</description>
+    <graphicData>
+      <texPath>Items/hvyshield/hvyshield_dkgry</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>8250</MarketValue>
+      
+	  <WorkToMake>17500</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_deflectors</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>16</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<KOTOR_AlloyDurasteel>30</KOTOR_AlloyDurasteel>
+		<ComponentSpacer>8</ComponentSpacer>
+		<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		<KOTOR_PlasmaCartridge>4</KOTOR_PlasmaCartridge>
+	</costList>
+    <apparel>
+	  <tags>
+		<li>KotORHvyShield_deflector</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_HeavyShields</li>
+	  <li>guy762TT_SpeederEquipment</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_HvyEShield_deflector</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="guy762_HvyShieldBase">
+    <defName>guy762_HvyShield_balmorran</defName>
+    <label>Balmorran prototype overshield</label>
+    <description>Balmorran Arms first established itself as a top-of-the-line war droid manufacturer following the Exar Kun war before they were eventually bought out by the Czerka Corporation. These powerful units are one of many casualties of Czerka's ever-growing monopoly, having been deemed too expensive for mass production.</description>
+    <graphicData>
+      <texPath>Items/hvyshield/hvyshield_grn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>10000</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_balmorran</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_HeavyShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_HvyEShield_balmorran</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>8000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_HvyShieldBase">
+    <defName>guy762_HvyShield_starforge</defName>
+    <label>Star Forge shield</label>
+    <description>When Revan returned to the galaxy after the conclusion of the Mandalorian Wars and declared war on the Jedi, they unleashed a massive armada powered by the recently-rediscovered Star Forge. These incredibly powerful shield units are but a mere example of the advanced technology the massive factory is capable of producing.</description>
+    <graphicData>
+      <texPath>Items/hvyshield/hvyshield_red</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>18000</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>SE_starforgedroid</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_HeavyShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_HvyEShield_starforge</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+
+  
+  
+</Defs>

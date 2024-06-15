@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <RecipeDef>
+	<defName>KotORRecipe_4xDshield_BI</defName>
+	<label>make 4 Mark I droid defense shields</label>
+	<description>Craft 4 limited-use Mark I droid defense shields.</description>
+	<jobString>Making 4 Mark I droid defense shields.</jobString>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+	<workAmount>4000</workAmount>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>Plasteel</li>
+		  </thingDefs>
+		</filter>
+		<count>40</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</filter>
+		<count>1</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>KOTOR_PlasmaCartridge</li>
+			</thingDefs>
+		</filter>
+		<count>2</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>Plasteel</li>
+		<li>ComponentSpacer</li>
+		<li>KOTOR_PlasmaCartridge</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <guy762_DroidShield_basicI>4</guy762_DroidShield_basicI>
+	</products>
+	<recipeUsers>
+		<li>ABF_Thing_Synstruct_PartWorkbench</li>
+	</recipeUsers>
+	<researchPrerequisite>guy762_ResearchKotOR_droidshields</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>6</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+	<defName>KotORRecipe_4xDshield_BII</defName>
+	<label>make 4 Mark II droid defense shields</label>
+	<description>Craft 4 limited-use Mark II droid defense shields.</description>
+	<jobString>Making 4 Mark II droid defense shields.</jobString>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+	<workAmount>4800</workAmount>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>Plasteel</li>
+		  </thingDefs>
+		</filter>
+		<count>40</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</filter>
+		<count>1</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>KOTOR_PlasmaCartridge</li>
+			</thingDefs>
+		</filter>
+		<count>2</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>Plasteel</li>
+		<li>ComponentSpacer</li>
+		<li>KOTOR_PlasmaCartridge</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <guy762_DroidShield_basicII>4</guy762_DroidShield_basicII>
+	</products>
+	<recipeUsers>
+		<li>ABF_Thing_Synstruct_PartWorkbench</li>
+	</recipeUsers>
+	<researchPrerequisite>guy762_ResearchKotOR_droidshields</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>10</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+  
+  
+  <RecipeDef>
+	<defName>KotORRecipe_4xDshield_BIII</defName>
+	<label>make 4 Mark III droid defense shields</label>
+	<description>Craft 4 limited-use Mark III droid defense shields.</description>
+	<jobString>Making 4 Mark III droid defense shields.</jobString>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+	<workAmount>6400</workAmount>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>Plasteel</li>
+		  </thingDefs>
+		</filter>
+		<count>40</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</filter>
+		<count>2</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>KOTOR_PlasmaCartridge</li>
+			</thingDefs>
+		</filter>
+		<count>2</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>Plasteel</li>
+		<li>ComponentSpacer</li>
+		<li>KOTOR_PlasmaCartridge</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <guy762_DroidShield_basicIII>4</guy762_DroidShield_basicIII>
+	</products>
+	<recipeUsers>
+		<li>ABF_Thing_Synstruct_PartWorkbench</li>
+	</recipeUsers>
+	<researchPrerequisite>guy762_ResearchKotOR_droidshields</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>14</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <RecipeDef>
+	<defName>KotORRecipe_4xDshield_envI</defName>
+	<label>make 4 Mark I droid environment shields</label>
+	<description>Craft 4 limited-use Mark I droid environment shields.</description>
+	<jobString>Making 4 Mark I droid environment shields.</jobString>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+	<workAmount>5400</workAmount>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>Plasteel</li>
+		  </thingDefs>
+		</filter>
+		<count>40</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</filter>
+		<count>4</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</filter>
+		<count>1</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>KOTOR_PlasmaCartridge</li>
+			</thingDefs>
+		</filter>
+		<count>2</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>Plasteel</li>
+		<li>ComponentIndustrial</li>
+		<li>ComponentSpacer</li>
+		<li>KOTOR_PlasmaCartridge</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <guy762_DroidShield_envI>4</guy762_DroidShield_envI>
+	</products>
+	<recipeUsers>
+		<li>ABF_Thing_Synstruct_PartWorkbench</li>
+	</recipeUsers>
+	<researchPrerequisite>guy762_ResearchKotOR_droidshields</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>8</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+	<defName>KotORRecipe_4xDshield_envII</defName>
+	<label>make 4 Mark II droid environment shields</label>
+	<description>Craft 4 limited-use Mark II droid environment shields.</description>
+	<jobString>Making 4 Mark II droid environment shields.</jobString>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+	<workAmount>6600</workAmount>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>Plasteel</li>
+		  </thingDefs>
+		</filter>
+		<count>40</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</filter>
+		<count>6</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</filter>
+		<count>1</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>KOTOR_PlasmaCartridge</li>
+			</thingDefs>
+		</filter>
+		<count>2</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>Plasteel</li>
+		<li>ComponentIndustrial</li>
+		<li>ComponentSpacer</li>
+		<li>KOTOR_PlasmaCartridge</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <guy762_DroidShield_envII>4</guy762_DroidShield_envII>
+	</products>
+	<recipeUsers>
+		<li>ABF_Thing_Synstruct_PartWorkbench</li>
+	</recipeUsers>
+	<researchPrerequisite>guy762_ResearchKotOR_droidshields</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>12</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <RecipeDef>
+	<defName>KotORRecipe_4xDshield_defI</defName>
+	<label>make 4 droid deflector grids</label>
+	<description>Craft 4 limited-use droid deflector grids.</description>
+	<jobString>Making 4 droid deflector grids.</jobString>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+	<workAmount>6000</workAmount>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>Plasteel</li>
+		  </thingDefs>
+		</filter>
+		<count>40</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</filter>
+		<count>2</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>KOTOR_PlasmaCartridge</li>
+			</thingDefs>
+		</filter>
+		<count>4</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>Plasteel</li>
+		<li>ComponentIndustrial</li>
+		<li>ComponentSpacer</li>
+		<li>KOTOR_PlasmaCartridge</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <guy762_DroidShield_defI>4</guy762_DroidShield_defI>
+	</products>
+	<recipeUsers>
+		<li>ABF_Thing_Synstruct_PartWorkbench</li>
+	</recipeUsers>
+	<researchPrerequisite>guy762_ResearchKotOR_deflectors</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>10</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+	<defName>KotORRecipe_4xDshield_defII</defName>
+	<label>make 4 adv. droid deflector grids</label>
+	<description>Craft 4 limited-use advanced droid deflector grids.</description>
+	<jobString>Making 4 adv. droid deflector grids.</jobString>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+	<workAmount>8000</workAmount>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>Plasteel</li>
+		  </thingDefs>
+		</filter>
+		<count>40</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</filter>
+		<count>3</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>KOTOR_PlasmaCartridge</li>
+			</thingDefs>
+		</filter>
+		<count>6</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>Plasteel</li>
+		<li>ComponentSpacer</li>
+		<li>KOTOR_PlasmaCartridge</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <guy762_DroidShield_defII>4</guy762_DroidShield_defII>
+	</products>
+	<recipeUsers>
+		<li>ABF_Thing_Synstruct_PartWorkbench</li>
+	</recipeUsers>
+	<researchPrerequisite>guy762_ResearchKotOR_deflectors</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>14</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <RecipeDef>
+	<defName>KotORRecipe_4xDshield_ion</defName>
+	<label>make 4 droid ion barriers</label>
+	<description>Craft 4 limited-use droid ion barriers.</description>
+	<jobString>Making 4 droid ion barriers.</jobString>
+	<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+	<workAmount>8000</workAmount>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>Plasteel</li>
+		  </thingDefs>
+		</filter>
+		<count>40</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</filter>
+		<count>4</count>
+	  </li>
+	  <li>
+		<filter>
+			<thingDefs>
+				<li>KOTOR_PlasmaCartridge</li>
+			</thingDefs>
+		</filter>
+		<count>2</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>Plasteel</li>
+		<li>ComponentSpacer</li>
+		<li>KOTOR_PlasmaCartridge</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <guy762_DroidShield_ion>4</guy762_DroidShield_ion>
+	</products>
+	<recipeUsers>
+		<li>ABF_Thing_Synstruct_PartWorkbench</li>
+	</recipeUsers>
+	<researchPrerequisite>guy762_ResearchKotOR_iondamp</researchPrerequisite>
+	<skillRequirements>
+		<Crafting>16</Crafting>
+	</skillRequirements>
+  </RecipeDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</Defs>
