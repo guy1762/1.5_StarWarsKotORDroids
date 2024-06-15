@@ -1,0 +1,58 @@
+<ModMetaData>
+	<name>Star Wars KotOR Droids</name>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_guy762_KotORDroids</modIconPath>
+	<packageId>guy762.KotORDroids</packageId>
+	<author>guy762</author>
+	<description>Adds droids from Star Wars: Knights of the Old Republic and Star Wars: Knights of the Old Republic II - The Sith Lords.\n\nDOWNLOAD THE FINAL 1.4 VERSION OF THIS MOD HERE: https://github.com/guy1762/SWKotOR-Project-1.4-Final-Build/tree/main</description>
+	<supportedVersions>
+		<!--li>1.4</li-->
+		<li>1.5</li>
+	</supportedVersions>
+	<url>https://github.com/guy1762/1.5_StarWarsXenotypes/tree/main</url>
+	
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+		<li>
+            <packageId>Killathon.ArtificialBeings</packageId>
+            <displayName>Artificial Beings Framework</displayName>
+            <!-- <steamWorkshopUrl></steamWorkshopUrl> -->
+            <downloadUrl>https://github.com/RWDevathon/Artificial-Beings-Framework</downloadUrl>
+        </li>
+		<li>
+            <packageId>Killathon.ArtificialBeings.SynCore</packageId>
+            <displayName>ABF: Synstructs Core</displayName>
+            <!-- <steamWorkshopUrl></steamWorkshopUrl> -->
+            <downloadUrl>https://github.com/RWDevathon/Synstructs-Core</downloadUrl>
+        </li>
+		<li>
+            <packageId>guy762.KotORWeapons</packageId>
+            <displayName>Star Wars KotOR Weapons and Armor</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2938932438</steamWorkshopUrl>
+        </li>
+	</modDependencies>
+	
+
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>smartkar.athenaframework</li>
+		<li>Orion.Hospitality</li>
+		<li>Killathon.ArtificialBeings</li>
+		<li>Killathon.ArtificialBeings.SynCore</li>
+		
+		<li>guy762.StarWarsXenotypes</li>
+		<li>guy762.MM.KotORCore</li>
+		<li>guy762.KotORWeapons</li>
+	</loadAfter>
+	<loadBefore>
+		<li>guy762.KotORFactions</li>
+	</loadBefore>
+	
+	<incompatibleWith>
+	  <li>guy762.KotORGadgets</li>
+	</incompatibleWith>
+</ModMetaData>
