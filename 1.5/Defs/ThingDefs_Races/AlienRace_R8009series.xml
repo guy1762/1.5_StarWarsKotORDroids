@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_R8009UD</defName>
+		<title>R-8009 series utility droid</title>
+		<titleShort>R-8009 unit</titleShort>
+		<description>This is a basic repair and cleaning droid.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_R8009UD</li>
+			<li>guy762BSC_Droid_all</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Animals</li>
+			<li>Hunting</li>
+            <li>Caring</li>
+            <li>Artistic</li>
+            <li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Mining</li>
+			<li>Crafting</li>
+			<li>Social</li>
+			<li>Intellectual</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Hauling</li>
+			<li>Cleaning</li>
+			<li>Constructing</li>
+			<li>Firefighting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	
+	
+	<AlienRace.ThingDef_AlienRace Name="guy762_DroidRace_R8009UD" ParentName="guy762_KotORDroidBase">
+		<defName>guy762_DroidRace_R8009UD</defName>
+		<label>R-8009 series utility droid</label>
+		<description>A simple multipurpose utility droid, Serv-O-Droid's R-8009 series quickly established itself to be the galaxy's leading maintenance and cleaning droid. These compact droids can be found everywhere in the galaxy in roles ranging from basic civil maintenance to fast-response starship repair.\n\nThis droid is capable of the following work types:\n\n-Construction\n-Cleaning\n-Hauling\n-Firefighting\n-Combat</description>
+		<alienRace>
+			<graphicPaths>
+                <body>
+                    <path>Droid/R8009/R8009</path>
+                </body>
+				<bodyMasks>
+				  <path>Droid/R8009/R8009_mask</path>
+				</bodyMasks>
+				<head>
+                    <path>512blank</path>
+                </head>
+                <skinShader>Cutout</skinShader>
+            </graphicPaths>
+			<raceRestriction>
+				
+				<onlyUseRaceRestrictedWeapons>true</onlyUseRaceRestrictedWeapons>
+				<weaponList />
+				
+				<apparelList>
+				  <li>guy762_DroidArmorLte</li>
+				  <li>guy762_DroidArmorLte_czerka</li>
+				  <li>guy762_DroidArmorLte_env</li>
+				  <li>guy762_DroidArmorLte_desh</li>
+				  <li>guy762_DroidArmorLte_impact</li>
+				  <li>guy762_DroidArmorLte_composite</li>
+				  <li>guy762_DroidArmorLte_agrinium</li>
+				  
+				  <li>guy762_DroidSoftware_computer</li>
+				  <li>guy762_DroidSoftware_security</li>
+				  <li>guy762_DroidSoftware_lockout</li>
+				  <li>guy762_DroidSoftware_exchange</li>
+				  <li>guy762_DroidSoftware_repair</li>
+				  <li>guy762_DroidSoftware_demo</li>
+				  <li>guy762_DroidSoftware_anatomy</li>
+				  
+				  <li>guy762_DroidGadget_laser</li>
+				  <li>guy762_DroidGadget_shock</li>
+				  <li>guy762_DroidGadget_firefoam</li>
+				  <li>guy762_DroidGadget_kolto</li>
+
+				  <li>guy762_DroidShield_basicI</li>
+				  <li>guy762_DroidShield_envI</li>
+				  <li>guy762_DroidShield_melee</li>
+				  <li>guy762_DroidShield_basicII</li>
+				  <li>guy762_DroidShield_envII</li>
+				  <li>guy762_DroidShield_defI</li>
+				  <li>guy762_DroidShield_basicIII</li>
+				  <li>guy762_DroidShield_ion</li>
+				  <li>guy762_DroidShield_defII</li>
+				  <li>guy762_DroidShield_baragwin</li>
+				  <li>guy762_DroidShield_arkanian</li>
+				  <li>guy762_DroidShield_echani</li>
+				  <li>guy762_DroidShield_verpine</li>
+				</apparelList>
+			</raceRestriction>
+            <generalSettings>
+                <alienPartGenerator>
+					<colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li> <!--beige-->
+										<weight>10</weight>
+										<only>RGBA(190,170,120,255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(130,140,155,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+					<headTypes>
+                        <li>guy762_DroidHeadType_HK</li>
+                    </headTypes>
+					<customDrawSize>(0.9)</customDrawSize>
+                </alienPartGenerator>
+				<forcedRaceTraitEntries>
+				  <li>
+					<defName>Asexual</defName>
+				  </li>
+				</forcedRaceTraitEntries>
+            </generalSettings>
+		</alienRace>
+        <uiIconPath>UI/Icon_R8009</uiIconPath>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<MoveSpeed>3</MoveSpeed>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
+			<ComfyTemperatureMin>-175</ComfyTemperatureMin>
+			<ComfyTemperatureMax>175</ComfyTemperatureMax>
+			
+			<GlobalLearningFactor>0.5</GlobalLearningFactor>
+			<WorkSpeedGlobal>1.1</WorkSpeedGlobal>
+			
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+			<InjuryHealingFactor>0.5</InjuryHealingFactor>
+            <!--IncomingDamageFactor>1</IncomingDamageFactor-->
+			
+            <ABF_Stat_Synstruct_CoherenceRetention>1.75</ABF_Stat_Synstruct_CoherenceRetention>
+            <ABF_Stat_Synstruct_NutritionalIntakeEfficiency>1.25</ABF_Stat_Synstruct_NutritionalIntakeEfficiency>
+            <ABF_Stat_Synstruct_ChargingSpeed>1.25</ABF_Stat_Synstruct_ChargingSpeed>
+			
+			<ABF_Stat_Artificial_ComplexityLimit>15</ABF_Stat_Artificial_ComplexityLimit>
+            <ABF_Stat_Artificial_SkillLimit>14</ABF_Stat_Artificial_SkillLimit>
+			
+			<Mass>25</Mass>
+		</statBases>
+		<race>
+			<body>ATR_KotORDroidBody_R8009UD</body>
+			<hasGenders>false</hasGenders>
+			<lifeExpectancy>250</lifeExpectancy>
+			<baseHealthScale>0.8</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<baseBodySize>0.65</baseBodySize>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>ABF_LifeStage_Artificial_Complete</def>
+					<minAge>0.0</minAge>
+					<soundAmbience>kotorsound_TsUD_ambient</soundAmbience>
+					<soundAngry>kotorsound_TsUD_angry</soundAngry>
+					<soundCall>kotorsound_TsUD_call</soundCall>
+					<soundWounded>kotorsound_TsUD_wounded</soundWounded>
+					<soundDeath>kotorsound_TsUD_death</soundDeath>
+				</li>
+			</lifeStageAges>
+			<nameGenerator>guy762_DroidNamer_R8009</nameGenerator>
+            <nameGeneratorFemale>guy762_DroidNamer_R8009</nameGeneratorFemale>
+		</race>
+		<modExtensions>
+			<li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
+                <canBeSapient>false</canBeSapient>
+				<!--droneSkillLevel>8</droneSkillLevel-->
+				<droneSkillLevel>0</droneSkillLevel>
+				<maxDirectives>2</maxDirectives>
+				<inherentSkills>
+                    <li><key>Shooting</key><value>4</value></li>
+					<li><key>Construction</key><value>8</value></li>
+                </inherentSkills>
+				
+                <dronesCanHaveTraits>false</dronesCanHaveTraits>
+				
+				<!--
+				<useCustomNoneGenderNameMakers>true</useCustomNoneGenderNameMakers>
+                <sapientNoneGenderNameMaker>guy762_DroidNamer_R8009</sapientNoneGenderNameMaker>
+                <droneNoneGenderNameMaker>guy762_DroidNamer_R8009</droneNoneGenderNameMaker>
+				-->
+				
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+					<li MayRequire="rim.job.world">Sex</li>
+					<li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedNeeds>
+                <artificialNeeds>
+                    <li><key>ABF_Need_Synstruct_Coolant</key><value>0.25</value></li>
+                    <li><key>ABF_Need_Synstruct_Lubricant</key><value>0.25</value></li>
+                </artificialNeeds>
+				<medicineList>
+                    <li>ABF_Thing_Synstruct_RepairStimMinor</li>
+                    <li>ABF_Thing_Synstruct_RepairStim</li>
+                    <li>ABF_Thing_Synstruct_RepairStimUltra</li>
+                </medicineList>
+                <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+				
+				<inherentWorkTypes>
+					<li>Cleaning</li>
+					<li>Hauling</li>
+					<li>Construction</li>
+					<li>Firefighter</li>
+					<li>BasicWorker</li>
+					<li>Hunting</li>
+				</inherentWorkTypes>
+				<forbiddenWorkTypes>
+					<li>Art</li>
+					<li>Doctor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+					<li>Cooking</li>
+					<li>Growing</li>
+					<li>Handling</li>
+					<li>Warden</li>
+					<li MayRequire="Orion.Hospitality">Diplomat</li>
+				</forbiddenWorkTypes>
+            </li>
+			<li Class="ArtificialBeings.ABF_SynstructExtension">
+                <playerReprogrammableDronePawnKindDef>KotORDroidColonist_R8009UD</playerReprogrammableDronePawnKindDef>
+            </li>
+		</modExtensions>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<recipes>
+            <li>ABF_Recipe_Synstruct_InjectCoolant</li>
+            <li>ABF_Recipe_Synstruct_InjectLubricant</li>
+        </recipes>
+		<butcherProducts>
+            <Steel>20</Steel>
+			<Plasteel>5</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</butcherProducts>
+		<tradeTags>
+            <li>guy762TT_KotORDroids_techbasic</li>
+		</tradeTags>
+	</AlienRace.ThingDef_AlienRace>
+	
+	
+	
+	
+
+</Defs>

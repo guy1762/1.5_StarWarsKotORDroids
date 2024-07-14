@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HeadTypeDef>
+        <defName>guy762_DroidHeadType_SentWD</defName>
+        <graphicPath>Droid/SentWD/SentWD_head</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_SentWD</defName>
+		<title>Sentinel-class war droid</title>
+		<titleShort>Sentinel war droid</titleShort>
+		<description>This is a common war droid.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_SentWD</li>
+			<li>guy762BSC_Droid_all</li>
+		</spawnCategories>
+		<workDisables>
+			<li>ManualSkilled</li>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+			<li>Caring</li>
+			<li>Animals</li>
+			<li>Social</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Hunting</li>  
+			<li>Hauling</li>
+			<li>Firefighting</li>
+		</requiredWorkTags>
+	</BackstoryDef>
+	
+	
+	
+	
+	
+	<AlienRace.ThingDef_AlienRace Name="guy762_DroidRace_SentWD" ParentName="guy762_KotORDroidBase">
+		<defName>guy762_DroidRace_SentWD</defName>
+		<label>Sentinel-class war droid</label>
+		<description>Kellenech Technologies' Sentinel-class war droid is the most widespread combat droid in the galaxy - and for good reason. First deployed during the Onderon campaign during the Mandalorian Wars, these units were used to supplant the dwindling count of Republic soldiers during the battle of Dxun, and were proved to be equally as capable as any organic fighting force. Its durable, easy-to-maintain design made it an ideal choice for widespread adoption, and following the war these units were sold to virtually every security force across the galaxy.\n\nThis droid is capable of the following work types:\n\n-Combat\n-Hunting\n-Hauling\n-Firefighting</description>
+		<alienRace>
+			<graphicPaths>
+                <body>
+                    <path>Droid/SentWD/SentWD_body</path>
+					<genderGraphics>
+                        <Male>Droid/SentWD/SentWD_body</Male>
+                        <Female>Droid/SentWD/SentWD_body</Female>
+                    </genderGraphics>
+                </body>
+				<!--bodyMasks>
+				  <path>Droid/SentWD/SentWD_bodymask</path>
+				</bodyMasks-->
+                <head>
+                    <path>Droid/SentWD/SentWD_head</path>
+					<genderGraphics>
+                        <Male>Droid/SentWD/SentWD_head</Male>
+                        <Female>Droid/SentWD/SentWD_head</Female>
+                        <None>Droid/SentWD/SentWD_head</None>
+                    </genderGraphics>
+                </head>
+				<!--headMasks>
+				  <path>Droid/SentWD/SentWD_headmask</path>
+				  <genderGraphics>
+                        <Male>Droid/SentWD/SentWD_headmask</Male>
+                        <Female>Droid/SentWD/SentWD_headmask</Female>
+                        <None>Droid/SentWD/SentWD_headmask</None>
+                    </genderGraphics>
+				</headMasks-->
+                <skinShader>Cutout</skinShader>
+				<apparel>
+                    <bodyTypeFallback>Female</bodyTypeFallback>
+                </apparel>
+            </graphicPaths>
+			<raceRestriction>
+				<whiteApparelList>
+				  <li>guy762_grenadebelt_frag</li>
+				  <li>guy762_grenadebelt_stun</li>
+				  <li>guy762_grenadebelt_ion</li>
+				  <li>guy762_grenadebelt_sonic</li>
+				  <li>guy762_grenadebelt_plasma</li>
+				  <li>guy762_grenadebelt_thermaldet</li>
+				  <li>Apparel_Bandolier</li>
+				  <li>Apparel_Cape</li>
+				</whiteApparelList>
+				
+				<apparelList>
+				  <li>guy762_DroidArmorMid</li>
+				  <li>guy762_DroidArmorMid_czerka</li> <!--THERE IS ANOTHER LIST IN THIS DOC-->
+				  <li>guy762_DroidArmorMid_env</li>
+				  <li>guy762_DroidArmorMid_desh</li>
+				  <li>guy762_DroidArmorMid_impact</li>
+				  <li>guy762_DroidArmorMid_composite</li>
+				  <li>guy762_DroidArmorMid_quadranium</li>
+				  
+				  <li>guy762_DroidHardware_agility</li>
+				  <li>guy762_DroidHardware_motivator</li>
+				  <li>guy762_DroidHardware_durability</li>
+				  <li>guy762_DroidHardware_parabolic</li>
+				  <li>guy762_DroidHardware_systems</li>
+				  <li>guy762_DroidHardware_remote</li>
+				  
+				  <li>guy762_DroidSensor_motion</li>
+				  <li>guy762_DroidSensor_surveillance</li>
+				  <li>guy762_DroidSensor_fighting</li>
+				  <li>guy762_DroidSensor_repair</li>
+				  <li>guy762_DroidSensor_memory</li>
+				  <li>guy762_DroidSensor_EMPresist</li>
+				  <li>guy762_DroidSensor_battle</li>
+				  <li>guy762_DroidSensor_microoptics</li>
+				  <li>guy762_DroidSensor_perception</li>
+				  
+				  <li>guy762_DroidWeapon_flamethrower</li>
+				  <li>guy762_DroidWeapon_ion</li>
+				  <li>guy762_DroidWeapon_seekerrocket</li>
+				  <li>guy762_DroidWeapon_microrocket</li>
+				  <li>guy762_DroidWeapon_stunbeam</li>
+				  <li>guy762_DroidWeapon_toxbeam</li>
+				  
+				  <li>guy762_DroidShield_basicI</li>
+				  <li>guy762_DroidShield_envI</li>
+				  <li>guy762_DroidShield_melee</li>
+				  <li>guy762_DroidShield_basicII</li>
+				  <li>guy762_DroidShield_envII</li>
+				  <li>guy762_DroidShield_defI</li>
+				  <li>guy762_DroidShield_basicIII</li>
+				  <li>guy762_DroidShield_ion</li>
+				  <li>guy762_DroidShield_defII</li>
+				  <li>guy762_DroidShield_baragwin</li>
+				  <li>guy762_DroidShield_arkanian</li>
+				  <li>guy762_DroidShield_echani</li>
+				  <li>guy762_DroidShield_verpine</li>
+				  
+				  <li>guy762_DroidSensor_warfare</li>
+				</apparelList>
+			</raceRestriction>
+            <generalSettings>
+                <alienPartGenerator>
+					<colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li> <!--t3-->
+										<weight>10</weight>
+										<only>RGBA(235,255,255,255)</only>
+									</li>
+									<li> <!--offwhite-->
+										<weight>1</weight>
+										<only>RGBA(180,185,170,255)</only>
+									</li>
+									<li> <!--grey-->
+										<weight>1</weight>
+										<only>RGBA(160,170,165,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+					<headBodyPartDef>ABF_BodyPart_Synstruct_Head</headBodyPartDef>
+					<headTypes>
+                        <li>guy762_DroidHeadType_SentWD</li>
+                    </headTypes>
+					<bodyTypes Inherit="False">
+                        <li>Female</li>
+                    </bodyTypes>
+					<!--customDrawSize>(1.1)</customDrawSize-->
+                </alienPartGenerator>
+				<forcedRaceTraitEntries>
+				  <li>
+					<defName>Asexual</defName>
+				  </li>
+				</forcedRaceTraitEntries>
+            </generalSettings>
+		</alienRace>
+        <uiIconPath>UI/Icon_SentWD</uiIconPath>
+		<statBases>
+			<MarketValue>2400</MarketValue>
+			<MoveSpeed>4</MoveSpeed>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			
+			<GlobalLearningFactor>0.4</GlobalLearningFactor>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+			<InjuryHealingFactor>0.65</InjuryHealingFactor>
+            <!--IncomingDamageFactor>0.9</IncomingDamageFactor-->
+			
+            <EMPResistance MayRequire="Ludeon.RimWorld.Biotech">0.15</EMPResistance>
+			
+            <ABF_Stat_Synstruct_CoherenceRetention>1</ABF_Stat_Synstruct_CoherenceRetention>
+            <ABF_Stat_Synstruct_NutritionalIntakeEfficiency>0.85</ABF_Stat_Synstruct_NutritionalIntakeEfficiency>
+            <ABF_Stat_Synstruct_ChargingSpeed>0.85</ABF_Stat_Synstruct_ChargingSpeed>
+			
+			<ABF_Stat_Artificial_ComplexityLimit>20</ABF_Stat_Artificial_ComplexityLimit>
+            <ABF_Stat_Artificial_SkillLimit>16</ABF_Stat_Artificial_SkillLimit>
+			
+			<Mass>100</Mass>
+		</statBases>
+		<race>
+			<body>ATR_KotORDroidBody_SentWD</body>
+			<hasGenders>false</hasGenders>
+			<lifeExpectancy>500</lifeExpectancy>
+			<baseHealthScale>1.5</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<baseBodySize>1</baseBodySize>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>ABF_LifeStage_Artificial_Complete</def>
+					<minAge>0.0</minAge>
+					<soundAmbience>kotorsound_SentinelWD_ambient</soundAmbience>
+					<soundAngry>kotorsound_SentinelWD_angry</soundAngry>
+					<soundCall>kotorsound_SentinelWD_call</soundCall>
+					<soundWounded>kotorsound_SentinelWD_wounded</soundWounded>
+					<soundDeath>kotorsound_SentinelWD_death</soundDeath>
+				</li>
+			</lifeStageAges>
+			<nameGenerator>guy762_DroidNamer_SentWD</nameGenerator>
+            <nameGeneratorFemale>guy762_DroidNamer_SentWD</nameGeneratorFemale>
+		</race>
+		<modExtensions>
+			<li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
+                <canBeSapient>false</canBeSapient>
+				<!--droneSkillLevel>12</droneSkillLevel--><droneSkillLevel>0</droneSkillLevel>
+				<maxDirectives>3</maxDirectives>
+				<inherentSkills>
+                    <li><key>Shooting</key><value>10</value></li>
+                    <li><key>Melee</key><value>8</value></li>
+                </inherentSkills>
+				
+                <dronesCanHaveTraits>false</dronesCanHaveTraits>
+				
+				<!--
+				<useCustomNoneGenderNameMakers>true</useCustomNoneGenderNameMakers>
+                <sapientNoneGenderNameMaker>guy762_DroidNamer_SentWD</sapientNoneGenderNameMaker>
+                <droneNoneGenderNameMaker>guy762_DroidNamer_SentWD</droneNoneGenderNameMaker>
+				-->
+				
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+					<li MayRequire="rim.job.world">Sex</li>
+					<li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedNeeds>
+                <artificialNeeds>
+                    <li><key>ABF_Need_Synstruct_Coolant</key><value>1.25</value></li>
+                    <li><key>ABF_Need_Synstruct_Lubricant</key><value>1.25</value></li>
+                </artificialNeeds>
+				<medicineList>
+                    <li>ABF_Thing_Synstruct_RepairStimMinor</li>
+                    <li>ABF_Thing_Synstruct_RepairStim</li>
+                    <li>ABF_Thing_Synstruct_RepairStimUltra</li>
+                </medicineList>
+                <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+				
+				<inherentWorkTypes>
+					<li>Hauling</li>
+					<li>Firefighter</li>
+					<li>BasicWorker</li>
+					<li>Hunting</li>
+				</inherentWorkTypes>
+				<forbiddenWorkTypes>
+					<li>Art</li>
+					<li>Doctor</li>
+					<li>ABF_WorkType_Artificial_Artificer</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+					<li>Cooking</li>
+					<li>Growing</li>
+					<li>Construction</li>
+					<li>Smithing</li>
+					<li>Crafting</li>
+					<li>Tailoring</li>
+					<li>Research</li>
+				</forbiddenWorkTypes>
+            </li>
+			<li Class="ArtificialBeings.ABF_SynstructExtension">
+                <playerReprogrammableDronePawnKindDef>KotORDroidColonist_SentWD</playerReprogrammableDronePawnKindDef>
+            </li>
+		</modExtensions>
+		<tools>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<recipes>
+            <li>ABF_Recipe_Synstruct_InjectCoolant</li>
+            <li>ABF_Recipe_Synstruct_InjectLubricant</li>
+        </recipes>
+		<butcherProducts>
+            <Steel>60</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</butcherProducts>
+		<tradeTags>
+            <li>guy762TT_KotORDroids_battlebasic</li>
+		</tradeTags>
+	</AlienRace.ThingDef_AlienRace>
+	
+
+	
+	
+	
+
+
+</Defs>

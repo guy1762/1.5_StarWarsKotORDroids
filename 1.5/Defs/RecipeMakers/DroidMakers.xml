@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_R8009UD</defName>
+        <label>R-8009 series utility droid</label>
+        <description>An uninitialized R-8009 series utility droid.\n\nThis droid is capable of the following work types:\n\n-Construction\n-Cleaning\n-Hauling\n-Firefighting\n-Combat</description>
+		<descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_R8009UD</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+        <graphicData>
+            <texPath>UI/Icon_R8009</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>guy762_ResearchKotOR_droidsimple</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>80</Steel>
+            <Plasteel>20</Plasteel>
+            <ABF_Thing_Synstruct_LubricantPack>1</ABF_Thing_Synstruct_LubricantPack>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_R8009UD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_GE3LD</defName>
+        <label>GE3-series labor droid</label>
+        <description>An uninitialized GE3-series labor droid.\n\nThis droid is capable of the following work types:\n\n-Cleaning\n-Hauling\n-Firefighting\n-Plants\n-Animals\n-Cooking\n-Social</description>
+		<descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_GE3LD</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+        <graphicData>
+            <texPath>UI/Icon_GE3LD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>guy762_ResearchKotOR_droidsimple</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>100</Steel>
+            <Plasteel>40</Plasteel>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+            <ABF_Thing_Synstruct_LubricantPack>2</ABF_Thing_Synstruct_LubricantPack>
+            <ComponentIndustrial>14</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_GE3LD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_MPDMkI</defName>
+        <label>Mark I Municipal Patrol droid</label>
+        <description>An uninitialized Municipal Patrol droid.\n\nThis droid is capable of the following work types:\n\n-Combat\n-Hunting</description>
+		<descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_MPDMkI</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+        <graphicData>
+            <texPath>UI/Icon_MPDMk1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>guy762_ResearchKotOR_droidsimple</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>40</Steel>
+            <Plasteel>60</Plasteel>
+			<KOTOR_UltraComponent>2</KOTOR_UltraComponent>
+            <ABF_Thing_Synstruct_CoolantPack>1</ABF_Thing_Synstruct_CoolantPack>
+            <ComponentIndustrial>14</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_MPDMkI</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_DevWD</defName>
+        <label>Devastator-class war droid</label>
+        <description>An uninitialized Devastator-class war droid.\n\nThis droid is capable of the following work types:\n\n-Combat\n-Hauling\n-Firefighting</description>
+		<descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_DevWD</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+        <graphicData>
+            <texPath>UI/Icon_DevWD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>guy762_ResearchKotOR_droidsimple</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>100</Steel>
+            <Plasteel>60</Plasteel>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+            <ABF_Thing_Synstruct_LubricantPack>2</ABF_Thing_Synstruct_LubricantPack>
+            <ComponentIndustrial>16</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_DevWD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+    <ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_3CUD</defName>
+        <label>3C-series utility droid</label>
+        <description>An uninitialized 3C-series utility droid.\n\nThis droid is capable of the following work types:\n\n-Construction\n-Crafting\n-Hauling\n-Firefighting\n-Combat</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_3Cseries</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_3C</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>22500</workAmount>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidutilityadv</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>80</Steel>
+            <Plasteel>50</Plasteel>
+            <ABF_Thing_Synstruct_CoolantPack>1</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>1</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>2</KOTOR_UltraComponent>
+            <ComponentIndustrial>16</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_3CUD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_KX12UPD</defName>
+        <label>K-X12 utility probe droid</label>
+        <description>An uninitialized K-X12 utility probe droid.\n\nThis droid is capable of the following work types:\n\n-Doctoring\n-Constructing\n-Firefighting\n-Combat\n-Hunting</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_KX12UPD</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_KX12UPD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>21750</workAmount>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidutilityadv</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>100</Steel>
+            <Plasteel>50</Plasteel>
+            <ABF_Thing_Synstruct_CoolantPack>1</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>2</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+            <ComponentIndustrial>16</ComponentIndustrial>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_KX12UPD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_GE3PD</defName>
+        <label>GE3-series protocol droid</label>
+        <description>An uninitialized GE3-series protocol droid.\n\nThis droid is capable of the following work types:\n\n-Social\n-Medical\n-Cooking\n-Firefighting</description>
+		<descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_GE3PD</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+        <graphicData>
+            <texPath>UI/Icon_GE3PD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>18750</workAmount>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+			<researchPrerequisite>guy762_ResearchKotOR_droidutilityadv</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>100</Steel>
+            <Plasteel>40</Plasteel>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+            <ABF_Thing_Synstruct_LubricantPack>1</ABF_Thing_Synstruct_LubricantPack>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_GE3PD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_SentWD</defName>
+        <label>Sentinel-class war droid</label>
+        <description>An uninitialized Sentinel-class war droid.\n\nThis droid is capable of the following work types:\n\n-Combat\n-Hunting\n-Hauling\n-Firefighting</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_SentWD</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_SentWD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>21000</workAmount>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidcombatadv</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>140</Steel>
+            <Plasteel>70</Plasteel>
+            <ABF_Thing_Synstruct_CoolantPack>2</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>1</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>2</KOTOR_UltraComponent>
+            <ComponentIndustrial>16</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_SentWD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_KM1MD</defName>
+        <label>KM1-series mining droid</label>
+        <description>An uninitialized KM1-series mining droid.\n\nThis droid is capable of the following work types:\n\n-Mining\n-Hauling\n-Firefighting\n-Combat</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_KM1MD</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_KM1MD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>24000</workAmount>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidlaboradv</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>160</Steel>
+            <Plasteel>80</Plasteel>
+            <ABF_Thing_Synstruct_CoolantPack>2</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>2</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>2</KOTOR_UltraComponent>
+            <ComponentIndustrial>16</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_KM1MD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_KM1HMD</defName>
+        <label>KM1-B excavation droid</label>
+        <description>An uninitialized KM1-B excavation droid.\n\nThis droid is capable of the following work types:\n\n-Mining\n-Hauling\n-Firefighting\n-Combat</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_KM1HMD</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_KM1HMD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>26000</workAmount>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidlaboradv</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <KOTOR_AlloyDurasteel>120</KOTOR_AlloyDurasteel>
+            <Plasteel>100</Plasteel>
+            <ABF_Thing_Synstruct_CoolantPack>3</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>2</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>4</KOTOR_UltraComponent>
+            <ComponentIndustrial>16</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_KM1HMD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_ADMkI</defName>
+        <label>Assault Droid Mark I</label>
+        <description>An uninitialized Mark I Assault Droid.\n\nThis droid is capable of the following work types:\n\n-Combat</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_ADMkI</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_ADMk1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>30500</workAmount>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidassault</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Plasteel>180</Plasteel>
+            <KOTOR_AlloyDurasteel>80</KOTOR_AlloyDurasteel>
+            <ABF_Thing_Synstruct_CoolantPack>3</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>4</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>3</KOTOR_UltraComponent>
+            <ComponentIndustrial>20</ComponentIndustrial>
+            <ComponentSpacer>8</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_ADMkI</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_ADMkIV</defName>
+        <label>Assault Droid Mark IV</label>
+        <description>An uninitialized Mark IV Assault Droid.\n\nThis droid is capable of the following work types:\n\n-Combat</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_ADMkIV</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_ADMk4_pub</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>34500</workAmount>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidassault</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Plasteel>180</Plasteel>
+            <KOTOR_AlloyDurasteel>120</KOTOR_AlloyDurasteel>
+            <ABF_Thing_Synstruct_CoolantPack>4</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>3</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>4</KOTOR_UltraComponent>
+            <ComponentIndustrial>22</ComponentIndustrial>
+            <ComponentSpacer>10</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_ADMkIV</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_DevAD</defName>
+        <label>Devastator-class Type II assassin droid</label>
+        <description>An uninitialized Devastator-class assassin droid.\n\nThis droid is capable of the following work types:\n\n-Combat\n-Hunting</description>
+		<descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_DevAD</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+        <graphicData>
+            <texPath>UI/Icon_DevAD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>28500</workAmount>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+			<researchPrerequisite>guy762_ResearchKotOR_droidassassin</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>120</Steel>
+            <Plasteel>80</Plasteel>
+			<KOTOR_UltraComponent>2</KOTOR_UltraComponent>
+			<ABF_Thing_Synstruct_CoolantPack>2</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>3</ABF_Thing_Synstruct_LubricantPack>
+            <ComponentIndustrial>22</ComponentIndustrial>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_DevAD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_KX12APD</defName>
+        <label>K-X12 assassin probe droid</label>
+        <description>An uninitialized K-X12 assassin probe droid.\n\nThis droid is capable of the following work types:\n\n-Combat\n-Hunting</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_KX12APD</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_KX12APD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>31750</workAmount>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidassassin</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Chemfuel>40</Chemfuel>
+            <Steel>120</Steel>
+            <Plasteel>60</Plasteel>
+            <ABF_Thing_Synstruct_CoolantPack>2</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>3</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>2</KOTOR_UltraComponent>
+            <ComponentIndustrial>20</ComponentIndustrial>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_KX12APD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_ITUD</defName>
+        <label>IT-series utility droid</label>
+        <description>An uninitialized IT-series utility droid.\n\nThis droid is capable of the following work types:\n\n-Intellectual\n-Firefighting\n-Combat</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_ITseries</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_IT</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>32500</workAmount>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidintel</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Steel>80</Steel>
+            <Plasteel>50</Plasteel>
+            <ABF_Thing_Synstruct_CoolantPack>2</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>1</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>4</KOTOR_UltraComponent>
+            <ComponentIndustrial>16</ComponentIndustrial>
+            <ComponentSpacer>8</ComponentSpacer>
+			<TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_ITUD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_T3UD</defName>
+        <label>T3-series utility droid</label>
+        <description>An uninitialized T3-series utility droid.\n\nThis droid is capable of the following work types:\n\n-Combat\n-Hauling\n-Crafting\n-Constructing\n-Intellectual\n-Firefighting</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_T3series</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_T3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>45000</workAmount>
+            <skillRequirements>
+                <Crafting>16</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidintel</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <KOTOR_AlloyDurasteel>80</KOTOR_AlloyDurasteel>
+            <Plasteel>80</Plasteel>
+            <ABF_Thing_Synstruct_CoolantPack>2</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>2</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>4</KOTOR_UltraComponent>
+            <ComponentIndustrial>22</ComponentIndustrial>
+            <ComponentSpacer>8</ComponentSpacer>
+            <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_T3UD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_GOTO</defName>
+        <label>G0-T0 superintelligence droid</label>
+        <description>An uninitialized G0-T0 superintelligence droid.\n\nThis droid is capable of the following work types:\n\n-Intellectual\n-Crafting\n-Firefighting\n-Combat</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_GOTO</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_GOTO</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>75000</workAmount>
+            <skillRequirements>
+                <Crafting>20</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidintel</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <KOTOR_AlloyDurasteel>100</KOTOR_AlloyDurasteel>
+            <Plasteel>200</Plasteel>
+            <ABF_Thing_Synstruct_CoolantPack>4</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>2</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>12</KOTOR_UltraComponent>
+            <ComponentIndustrial>22</ComponentIndustrial>
+            <ComponentSpacer>16</ComponentSpacer>
+            <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_GOTO</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_ADMkI_sf</defName>
+        <label>Star Forge Assault Droid</label>
+        <description>An uninitialized Star Forge Assault Droid.\n\nThis droid is capable of the following work types:\n\n-Combat</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_ADMkI_sf</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_ADMk1_sf</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>52500</workAmount>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidsith</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Plasteel>280</Plasteel>
+            <KOTOR_AlloyDurasteel>180</KOTOR_AlloyDurasteel>
+            <ABF_Thing_Synstruct_CoolantPack>6</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>6</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>4</KOTOR_UltraComponent>
+            <ComponentIndustrial>28</ComponentIndustrial>
+            <ComponentSpacer>10</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_ADMkI_sf</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_ADMkIV_sith</defName>
+        <label>Assault Droid Mark IV Type B</label>
+        <description>An uninitialized Mark IV Type B Assault Droid.\n\nThis droid is capable of the following work types:\n\n-Combat</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_ADMkIV_sith</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_ADMk4</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>64500</workAmount>
+            <skillRequirements>
+                <Crafting>16</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_droidsith</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <Plasteel>240</Plasteel>
+            <KOTOR_AlloyDurasteel>200</KOTOR_AlloyDurasteel>
+            <ABF_Thing_Synstruct_CoolantPack>6</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>3</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>6</KOTOR_UltraComponent>
+            <ComponentIndustrial>24</ComponentIndustrial>
+            <ComponentSpacer>12</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_ADMkIV_sith</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="ABF_Thing_Synstruct_Generator_MakeableBase">
+        <defName>guy762_DroidGenerator_HK51AD</defName>
+        <label>HK-51 assassin droid</label>
+        <description>An uninitialized HK-51 assassin droid.\n\nThis droid is capable of the following work types:\n\n-Combat\n-Hunting\n-Crafting\n-Constructing\n-Social\n-Intellectual\n-Firefighting</description>
+        <descriptionHyperlinks>
+			<AlienRace.ThingDef_AlienRace>guy762_DroidRace_HK51series</AlienRace.ThingDef_AlienRace>
+		</descriptionHyperlinks>
+		<graphicData>
+            <texPath>UI/Icon_HK51</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <workAmount>62000</workAmount>
+            <skillRequirements>
+                <Crafting>18</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>guy762_ResearchKotOR_hk</researchPrerequisite>
+        </recipeMaker>
+        <costList>
+            <KOTOR_AlloyDurasteel>180</KOTOR_AlloyDurasteel>
+            <Plasteel>100</Plasteel>
+            <ABF_Thing_Synstruct_CoolantPack>4</ABF_Thing_Synstruct_CoolantPack>
+            <ABF_Thing_Synstruct_LubricantPack>4</ABF_Thing_Synstruct_LubricantPack>
+            <KOTOR_UltraComponent>10</KOTOR_UltraComponent>
+            <ComponentIndustrial>26</ComponentIndustrial>
+            <ComponentSpacer>12</ComponentSpacer>
+			<TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+        </costList>
+        <comps>
+            <li Class="ArtificialBeings.CompProperties_PawnSpawner">
+                <pawnKind>KotORDroidColonist_HK51AD</pawnKind>
+            </li>
+        </comps>
+    </ThingDef>
+	
+
+
+</Defs>

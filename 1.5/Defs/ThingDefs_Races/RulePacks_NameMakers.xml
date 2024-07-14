@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- This Rulepackdef is what finds the txt files to be used in the later rulepacks -->
+    <RulePackDef>
+        <defName>guy762_DroidNameRules</defName>
+        <rulePack>
+            <rulesFiles>
+                <li>Droid_TwoCode->droidnames/astrocode</li>
+                <li>Droid_ID->droidnames/genericID</li>
+				<li>Droid_HK47->droidnames/HK47</li>
+                <li>Droid_HK50->droidnames/HK50</li>
+                <li>Droid_HK51->droidnames/HK51</li>
+				<li>Droid_T3M4->droidnames/T3M4</li>
+                <li>Droid_T3->droidnames/T3</li>
+                <li>Droid_3C->droidnames/3C</li>
+                <li>Droid_IT->droidnames/IT</li>
+				<li>Droid_ADMk1->droidnames/ADMk1</li>
+				<li>Droid_ADMk4->droidnames/ADMk4</li>
+                <li>Droid_R8009->droidnames/R8009</li>
+                <li>Droid_DevWD->droidnames/Devastator</li>
+                <li>Droid_SentWD->droidnames/Sentinel</li>
+                <li>Droid_GE3->droidnames/GE3</li>
+                <li>Droid_KX12->droidnames/KX12</li>
+                <li>Droid_KM1->droidnames/KM1</li>
+                <li>Droid_MPD->droidnames/MPD</li>
+                <li>Droid_GOTO->droidnames/GOTO</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- This is the item that goes into the racedef's namegenerator
+        Example - <nameGenerator>ATR_AndroidMaleNames</nameGenerator> -->
+    <RulePackDef>
+        <defName>guy762_DroidNamer_T3</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_T3]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_3C</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_3C]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_IT</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_IT]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	
+	
+	<RulePackDef>
+        <defName>guy762_HeroNamer_T3M4</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_T3M4]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	
+	
+	
+	<RulePackDef>
+        <defName>guy762_HeroNamer_HK</defName>
+		<include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_HK47]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_HK50</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_HK50]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_HK51</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_HK51]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_GOTO</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_GOTO]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	
+	
+	
+	
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_R8009</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_R8009] [Droid_ID]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_GE3PD</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_GE3] [Droid_ID]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_KX12</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_KX12] [Droid_ID]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_KM1MD</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_KM1] [Droid_ID]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_MPDMkI</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_MPD] [Droid_ID]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_DevWD</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_DevWD] [Droid_ID]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_SentWD</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_SentWD] [Droid_ID]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_ADMkI</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ADMk1] [Droid_ID]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_ADMkIV</defName>
+        <include>
+            <li>guy762_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ADMk4] [Droid_ID]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    
+
+</Defs>

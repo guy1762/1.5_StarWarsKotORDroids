@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <ThingDef ParentName="guy762_DroidShieldBase">
+    <defName>guy762_DroidShield_basicI</defName>
+    <label>Mark I droid defense shield</label>
+    <description>This is a basic model energy shield universally applicable to most droids. The power drain is significant, however, and units like this must be replaced regularly.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>200</MarketValue>
+    </statBases>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t1</li>
+		<li>KotORDroidShield_weak</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_basic1</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>10</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidShieldBase">
+    <defName>guy762_DroidShield_envI</defName>
+    <label>Mark I droid environment shield</label>
+    <description>Initially designed to resist the harsh conditions of factory floors, these shields provide a droid with basic protection against a broad array of effects. The power drain is significant, however, and they must be replaced regularly.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier1_yt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>350</MarketValue>
+    </statBases>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t1</li>
+		<li>KotORDroidShield_weak</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_env1</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>10</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="guy762_DroidShieldBase">
+    <defName>guy762_DroidShield_melee</defName>
+    <label>droid melee shield</label>
+    <description>Though in significantly less demand than energy shields, droid melee shields are typically reserved for wildlife pest control operations, where targets generally have fewer qualms about charging head-on into mechanical opponents. The small power source can burn out when repeatedly stressed, requiring replacement of the entire unit.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier1_melee</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <MarketValue>275</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t1</li>
+		<li>KotORDroidShield_melee</li>
+		<li>SaV_DroidShield_gladiator</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_melee</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>10</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidShieldBase">
+    <defName>guy762_DroidShield_basicII</defName>
+    <label>Mark II droid defense shield</label>
+    <description>Upgraded from the basic portable energy shield, these units are marketed to companies and governments that keep large standing forces of combat droids. The power drain is significant, however, and they must be replaced regularly.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+    </statBases>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t2</li>
+		<li>KotORDroidShield_mid</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_basic2</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>10</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidShieldBase">
+    <defName>guy762_DroidShield_envII</defName>
+    <label>Mark II droid environment shield</label>
+    <description>This unit is an aftermarket modification of the shielding typically found on deep-core mining droids. It provides broad protection against many effects, but the power drain is significant and it must be replaced regularly.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier2_yt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>500</MarketValue>
+    </statBases>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t2</li>
+		<li>KotORDroidShield_mid</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_env2</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>10</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="guy762_DroidShieldBase">
+    <defName>guy762_DroidShield_defI</defName>
+    <label>droid deflector grid</label>
+    <description>"Deflector grid" shielding is relatively new technology, capable of rapidly recovering from uncoordinated bursts of small-arm energy attacks. In lieu of any ionizing weaponry, these shields can only be broken in two ways - through large blasts of concentrated energy, or through attrition. The small power source can burn out when repeatedly stressed, requiring replacement of the entire unit.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier2_grn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+    </statBases>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t2</li>
+		<li>KotORDroidShield_deflector</li>
+		<li>SaV_DroidShield_gladiator</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_def1</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>5</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  
+
+  
+  <ThingDef ParentName="guy762_DroidShieldBase">
+    <defName>guy762_DroidShield_basicIII</defName>
+    <label>Mark III droid defense shield</label>
+    <description>This sophisticated item is designed for top quality combat droids, and produces superior protection for any droid with the necessary software to install it. The power drain is significant, however, and it must be replaced regularly.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1070</MarketValue>
+    </statBases>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t3</li>
+		<li>KotORDroidShield_strong</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_basic3</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>10</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidShieldBase">
+    <defName>guy762_DroidShield_defII</defName>
+    <label>adv. droid deflector grid</label>
+    <description>These upgraded deflector shield units are even harder to penetrate than earlier models. Ion weaponry is a necessity when facing these, as even blaster cannons have difficulty overloading their enhanced adaption matrices. The small power source can burn out when repeatedly stressed, requiring replacement of the entire unit.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier3_grn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>4975</MarketValue>
+    </statBases>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t3</li>
+		<li>KotORDroidShield_advdeflector</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_def2</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>5</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+ 
+  
+  <ThingDef ParentName="guy762_DroidShieldBase">
+    <defName>guy762_DroidShield_ion</defName>
+    <label>droid ion barrier</label>
+    <description>First developed by Balmorran Arms for use on larger war droids, ion-absorbing shield technology has since been miniaturized into a package that can easily be installed on smaller droid models. The cost of such technology, however, is too severe for most defense forces, and the unit must still be replaced after repeated uses. Additionally, the complications of the ion and EMP dampening design leave these shields particularly vulnerable to sonic attacks and will easily de-stabilize when hit by one.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier3_blu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>8000</MarketValue>
+    </statBases>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_rare</li>
+		<li>KotORDroidShield_t3</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_ion</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>5</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidShieldBase">
+    <defName>guy762_DroidShield_baragwin</defName>
+    <label>Baragwin droid shield</label>
+    <description>A super-efficient version of a normal droid energy shield, the Baragwin version has been modified and customized to be able to run off the power supply of the droid mounting it. While the energy drain on the droid is insignificant, the protection gained is equal to a normal light droid energy shield.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier1_baragwin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>8000</MarketValue>
+    </statBases>
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_rare</li>
+		<li>KotORDroidShield_t3</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidShields</li>
+	  <li>guy762TT_Baragwin</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_basic1</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidShieldCraftableBase">
+    <defName>guy762_DroidShield_renewable</defName>
+    <label>droid renewable shield</label>
+    <description>Through a complex ambient-energy collection system, these shields can be maintained and renewed without the replacement of the unit, allowing for this shield to be raised and lowered a near infinite amount of times.\n\nThis is a highly advanced piece of technology, and can only be equipped on the following droid models:</description>
+    <descriptionHyperlinks>
+		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_T3series</AlienRace.ThingDef_AlienRace>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidshield/droidshield_tier3_t3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>20000</MarketValue>
+	  
+	  <WorkToMake>8000</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_teethree</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>16</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>4</ComponentSpacer>
+		<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		<KOTOR_PlasmaCartridge>2</KOTOR_PlasmaCartridge>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_T3M4</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORLegendary</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_DroidEShield_basic3</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+	  <li Class="CompProperties_ApparelReloadable">
+		<maxCharges>1</maxCharges>
+		<hotKey>Misc4</hotKey>
+		<chargeNoun>usage</chargeNoun>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <replenishAfterCooldown>true</replenishAfterCooldown>
+        <baseReloadTicks>12000</baseReloadTicks> <!-- 60ticks = 1sec -->
+	  </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+</Defs>

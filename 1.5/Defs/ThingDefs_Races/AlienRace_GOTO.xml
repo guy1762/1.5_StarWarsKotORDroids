@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_GOTO</defName>
+		<title>G0-T0 Infrastructure Planning Droid</title>
+		<titleShort>G0-T0 unit</titleShort>
+		<description>This is a highly advanced droid intelligence.</description>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_GOTO</li>
+			<li>guy762BSC_Droid_all</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Cooking</li>
+			<li>PlantWork</li>
+			<li>Mining</li>
+			<li>ManualDumb</li>
+			<li>Artistic</li>
+			<li>Caring</li>
+			<li>Animals</li>
+			<li>Hunting</li>
+			<li>Constructing</li>
+			<li>Social</li>
+		</workDisables>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+			<li>Crafting</li>
+			<li>Firefighting</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<TooSmart>0</TooSmart>
+			<Psychopath>0</Psychopath>
+			<AnnoyingVoice>0</AnnoyingVoice>
+			<Asexual>0</Asexual>
+		</forcedTraits>
+	</BackstoryDef>
+	
+	
+	
+	
+	
+	
+	<AlienRace.ThingDef_AlienRace Name="guy762_DroidRace_GOTO" ParentName="guy762_KotORDroidBase">
+		<defName>guy762_DroidRace_GOTO</defName>
+		<label>G0-T0 superintelligence droid</label>
+		<description>Initially developed by Aratech Repulsorlift Company for aid in galactic reconstruction efforts following the Exar Kun war, full production of these advanced intelligence droids was delayed by almost 20 years by subsequent galaxy-wide conflicts with the Mandalorians and Revan's Sith. The computational power of these units is immensely powerful, and in the wrong hands could be devastating to the galaxy at large. Aratech manufactures these droids to-order for the Republic's infrastructure planning department, and each unit is carefully monitored by Republic Intelligence. Concerningly, a number of these units have already gone missing.\n\nThis droid is capable of the following work types:\n\n-Intellectual\n-Crafting\n-Firefighting\n-Combat</description>
+		<alienRace>
+			<graphicPaths>
+                <body>
+                    <path>Droid/GOTO/GOTO</path>
+                </body>
+				<bodyMasks>
+				  <path>Droid/GOTO/GOTO_mask</path>
+				</bodyMasks>
+				<head>
+                    <path>768blank</path>
+                </head>
+                <skinShader>Cutout</skinShader>
+            </graphicPaths>
+			<raceRestriction>
+				<apparelList>
+				  <li>guy762_DroidArmorHvy</li>
+				  <li>guy762_DroidArmorHvy_czerka</li> <!--THERE IS ANOTHER LIST IN THIS DOC-->
+				  <li>guy762_DroidArmorHvy_env</li>
+				  <li>guy762_DroidArmorHvy_desh</li>
+				  <li>guy762_DroidArmorHvy_impact</li>
+				  <li>guy762_DroidArmorHvy_composite</li>
+				  <li>guy762_DroidArmorHvy_diatium</li>
+				  
+				  <li>guy762_DroidSoftware_computer</li>
+				  <li>guy762_DroidSoftware_security</li>
+				  <li>guy762_DroidSoftware_lockout</li>
+				  <li>guy762_DroidSoftware_exchange</li>
+				  <li>guy762_DroidSoftware_repair</li>
+				  <li>guy762_DroidSoftware_demo</li>
+				  <li>guy762_DroidSoftware_anatomy</li>
+				  
+				  <li>guy762_DroidHardware_agility</li>
+				  <li>guy762_DroidHardware_motivator</li>
+				  <li>guy762_DroidHardware_durability</li>
+				  <li>guy762_DroidHardware_parabolic</li>
+				  <li>guy762_DroidHardware_systems</li>
+				  <li>guy762_DroidHardware_remote</li>
+				  
+				  <li>guy762_DroidSensor_motion</li>
+				  <li>guy762_DroidSensor_surveillance</li>
+				  <li>guy762_DroidSensor_fighting</li>
+				  <li>guy762_DroidSensor_repair</li>
+				  <li>guy762_DroidSensor_memory</li>
+				  <li>guy762_DroidSensor_EMPresist</li>
+				  <li>guy762_DroidSensor_battle</li>
+				  <li>guy762_DroidSensor_microoptics</li>
+				  <li>guy762_DroidSensor_perception</li>
+				  
+				  <li>guy762_DroidGadget_laser</li>
+				  <li>guy762_DroidGadget_shock</li>
+				  <li>guy762_DroidGadget_firefoam</li>
+				  <li>guy762_DroidGadget_kolto</li>
+				  
+				  <li>guy762_DroidWeapon_holdout</li>
+				  <li>guy762_DroidWeapon_trishot</li>
+				  <li>guy762_DroidWeapon_pulse</li>
+				  <li>guy762_DroidWeapon_sonic</li>
+				  <li>guy762_DroidWeapon_plasma</li>
+				  <li>guy762_DroidWeapon_railgun</li>
+				  
+				  <li>guy762_DroidWeapon_flamethrower</li>
+				  <li>guy762_DroidWeapon_ion</li>
+				  <li>guy762_DroidWeapon_seekerrocket</li>
+				  <li>guy762_DroidWeapon_microrocket</li>
+				  <li>guy762_DroidWeapon_stunbeam</li>
+				  <li>guy762_DroidWeapon_toxbeam</li>
+				  
+				  <li>guy762_HvyShield_basic</li>
+				  <li>guy762_HvyShield_env</li>
+				  <li>guy762_HvyShield_thermal</li>
+				  <li>guy762_HvyShield_debris</li>
+				  <li>guy762_HvyShield_echani</li>
+				  <li>guy762_HvyShield_baragwin</li>
+				  <li>guy762_HvyShield_ion</li>
+				  <li>guy762_HvyShield_deflector</li>
+				  <li>guy762_HvyShield_balmorran</li>
+				  <li>guy762_HvyShield_starforge</li>
+				  
+				  <li>guy762_DroidStealthDevice</li>
+				  <li>guy762_DroidHardware_scav</li>
+				  <li>guy762_DroidSensor_warfare</li>
+				  <li>guy762_DroidSensor_goto</li>
+				</apparelList>
+				
+				<whiteTraitList>
+					<li>TooSmart</li>
+					<li>AnnoyingVoice</li>
+				</whiteTraitList>
+			</raceRestriction>
+            <generalSettings>
+                <alienPartGenerator>
+					<colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li> <!--black-->
+										<weight>100</weight>
+										<only>RGBA(50,50,55,255)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li> <!--grey-->
+										<weight>10</weight>
+										<only>RGBA(175,175,180,255)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+					<headTypes>
+                        <li>guy762_DroidHeadType_HK</li>
+                    </headTypes>
+					<customDrawSize>(1.25)</customDrawSize>
+                </alienPartGenerator>
+				<forcedRaceTraitEntries>
+				  <li>
+					<defName>TooSmart</defName>
+				  </li>
+				  <li>
+					<defName>AnnoyingVoice</defName>
+				  </li>
+				  <li>
+					<defName>Asexual</defName>
+				  </li>
+				</forcedRaceTraitEntries>
+            </generalSettings>
+		</alienRace>
+        <uiIconPath>UI/Icon_GOTO</uiIconPath>
+		<statBases>
+			<MarketValue>60000</MarketValue>
+			<MoveSpeed>2</MoveSpeed>
+			<VacuumSpeedMultiplier MayRequire="kentington.saveourship2">2</VacuumSpeedMultiplier>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			
+			<GlobalLearningFactor>2</GlobalLearningFactor>
+			
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <InjuryHealingFactor>2</InjuryHealingFactor>
+            <IncomingDamageFactor>0.95</IncomingDamageFactor>
+			
+			<StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">0.9</StaggerDurationFactor>
+            <EMPResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</EMPResistance>
+			
+			<ABF_Stat_Artificial_ComplexityLimit>50</ABF_Stat_Artificial_ComplexityLimit>
+            <ABF_Stat_Artificial_SkillLimit>20</ABF_Stat_Artificial_SkillLimit>
+			
+            <ABF_Stat_Synstruct_CoherenceRetention>3</ABF_Stat_Synstruct_CoherenceRetention>
+			
+            <ABF_Stat_Synstruct_NutritionalIntakeEfficiency>1.5</ABF_Stat_Synstruct_NutritionalIntakeEfficiency>
+            <ABF_Stat_Synstruct_ChargingSpeed>1.5</ABF_Stat_Synstruct_ChargingSpeed>
+			
+			<Mass>200</Mass>
+		</statBases>
+		<race>
+			<body>ATR_KotORDroidBody_GOTO</body>
+			<hasGenders>false</hasGenders>
+			<lifeExpectancy>1000</lifeExpectancy>
+			<baseHealthScale>2</baseHealthScale>
+			<baseHungerRate>1.25</baseHungerRate>
+			<baseBodySize>1.25</baseBodySize>
+			<nameGenerator>guy762_DroidNamer_GOTO</nameGenerator>
+            <nameGeneratorFemale>guy762_DroidNamer_GOTO</nameGeneratorFemale>
+		</race>
+		<modExtensions>
+			<li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
+                <canBeSapient>false</canBeSapient>
+				<!--droneSkillLevel>18</droneSkillLevel--><droneSkillLevel>0</droneSkillLevel>
+				<maxDirectives>12</maxDirectives>
+				<inherentSkills>
+                    <li><key>Shooting</key><value>12</value></li>
+                    <li><key>Crafting</key><value>10</value></li>
+					<li><key>Social</key><value>10</value></li>
+					<li><key>Intellectual</key><value>20</value></li>
+                </inherentSkills>
+				
+                <dronesCanHaveTraits>true</dronesCanHaveTraits>
+				
+				<!--
+				<useCustomNoneGenderNameMakers>true</useCustomNoneGenderNameMakers>
+                <sapientNoneGenderNameMaker>guy762_DroidNamer_GOTO</sapientNoneGenderNameMaker>
+                <droneNoneGenderNameMaker>guy762_DroidNamer_GOTO</droneNoneGenderNameMaker>
+				-->
+				
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+					<li MayRequire="rim.job.world">Sex</li>
+					<li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedNeeds>
+                <artificialNeeds>
+                    <li><key>ABF_Need_Synstruct_Coolant</key><value>4</value></li>
+                    <li><key>ABF_Need_Synstruct_Lubricant</key><value>0.5</value></li>
+                </artificialNeeds>
+				<medicineList>
+                    <li>ABF_Thing_Synstruct_RepairStimMinor</li>
+                    <li>ABF_Thing_Synstruct_RepairStim</li>
+                    <li>ABF_Thing_Synstruct_RepairStimUltra</li>
+                </medicineList>
+                <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+
+				<inherentWorkTypes>
+					<li>Hunting</li>
+					<li>Research</li>
+					<li>Firefighter</li>
+					<li>BasicWorker</li>
+				</inherentWorkTypes>
+				<forbiddenWorkTypes>
+					<li>Art</li>
+					<li>Doctor</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+					<li>Cleaning</li>
+					<li>Cooking</li>
+					<li>Growing</li>
+					<li>PlantCutting</li>
+					<li>Handling</li>
+					<li>Mining</li>
+				</forbiddenWorkTypes>
+            </li>
+			<li Class="ArtificialBeings.ABF_SynstructExtension">
+                <playerReprogrammableDronePawnKindDef>KotORDroidColonist_GOTO</playerReprogrammableDronePawnKindDef>
+            </li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Flying</movementDef>
+			</li>
+		</modExtensions>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<recipes>
+            <li>ABF_Recipe_Synstruct_InjectCoolant</li>
+            <li>ABF_Recipe_Synstruct_InjectLubricant</li>
+        </recipes>
+		<butcherProducts>
+            <KOTOR_AlloyDurasteel>40</KOTOR_AlloyDurasteel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+		</butcherProducts>
+		<tradeTags>
+            <li>guy762TT_KotORDroids_techrare</li>
+		</tradeTags>
+	</AlienRace.ThingDef_AlienRace>
+	
+	
+	
+	
+	
+
+
+</Defs>

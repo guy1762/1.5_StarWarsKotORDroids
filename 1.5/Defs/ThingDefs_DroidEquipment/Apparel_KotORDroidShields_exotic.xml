@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="guy762_DroidShieldCraftableBase">
+    <defName>guy762_DroidShield_arkanian</defName>
+    <label>Arkanian droid defense shield</label>
+    <description>One of the first forays into droid-specific shield technology, Arkanian shields still hold up in modern times. The small power source can burn out when repeatedly stressed, requiring replacement of the entire unit.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier1_ark</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>640</MarketValue>
+	  
+	  <WorkToMake>1500</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+      <researchPrerequisite>guy762_ResearchKotOR_droidshields</researchPrerequisite>
+	  <skillRequirements>
+		<Crafting>6</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <guy762_energyshield_arkanian>1</guy762_energyshield_arkanian>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t2</li>
+		<li>KotORDroidShield_mid</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_EShield_arkanian</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>5</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="guy762_DroidShieldCraftableBase">
+    <defName>guy762_DroidShield_echani</defName>
+    <label>Echani droid shield</label>
+    <description>The Echani's shield-making talents were not used to create these shields with the intent of widespread use in battle, but rather to give themselves stronger droid opponents to test themselves against. The small power source can burn out when repeatedly stressed, requiring replacement of the entire unit.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier2_ech</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>620</MarketValue>
+	  
+	  <WorkToMake>1500</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+      <researchPrerequisite>guy762_ResearchKotOR_droidshields</researchPrerequisite>
+	  <skillRequirements>
+		<Crafting>8</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <guy762_energyshield_echaniHvy>1</guy762_energyshield_echaniHvy>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t2</li>
+		<li>KotORDroidShield_strong</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_EShield_echani1</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>5</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidShieldCraftableBase">
+    <defName>guy762_DroidShield_verpine</defName>
+    <label>Verpine prototype droid shield</label>
+    <description>This rare Verpine shield unit has been modified to fit droids, rather than organics. The small power source can burn out when repeatedly stressed, requiring replacement of the entire unit.</description>
+    <graphicData>
+      <texPath>Items/droidshield/droidshield_tier3_vrp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1585</MarketValue>
+	  
+	  <WorkToMake>1500</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+      <researchPrerequisite>guy762_ResearchKotOR_droidshields</researchPrerequisite>
+	  <skillRequirements>
+		<Crafting>10</Crafting>
+	  </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <guy762_energyshield_verpine>1</guy762_energyshield_verpine>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidShield_t3</li>
+		<li>KotORDroidShield_rare</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+	<verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate shield</label>
+        
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_EShield_verpine</hediffDef>
+        <inDanger>true</inDanger>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_shieldpowerup</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+	<comps>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>5</maxCharges>
+			<destroyOnEmpty>true</destroyOnEmpty>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>usage</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+		</li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+  
+</Defs>
